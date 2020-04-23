@@ -1,9 +1,36 @@
 {
+  "name": "ntsanov.com",
+  "version": "1.0.0",
+  "description": "Personal website of Nikolay Tsanov",
+  "main": "gulpfile.babel.js",
   "devDependencies": {
-    "autoprefixer": "^9.3.1",
-    "postcss-cli": "^6.0.1",
-    "postcss-import": "^12.0.1",
-    "purgecss": "^1.1.0",
-    "tailwindcss": "^1.0.0"
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "@fullhuman/postcss-purgecss": "2.1.2",
+    "autoprefixer": "9.7.6",
+    "browser-sync": "2.26.7",
+    "cross-env": "7.0.2",
+    "cross-spawn": "7.0.2",
+    "cssnano": "4.1.10",
+    "gulp": "4.0.2",
+    "gulp-postcss": "8.0.0",
+    "postcss-import": "12.0.1",
+    "tailwindcss": "1.3.4"
+  },
+  "scripts": {
+    "build:production": "cross-env NODE_ENV=production gulp",
+    "build:dev": "cross-env NODE_ENV=development gulp",
+    "build": "npm run build:production",
+    "dev": "cross-env NODE_ENV=development gulp serve",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niktsanov/niktsanov.github.io"
+  },
+  "author": "Nikolay Tsanov",
+  "publishConfig": {
+    "access": "public"
   }
 }
