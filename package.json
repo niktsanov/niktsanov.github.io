@@ -32,5 +32,8 @@
   "author": "Nikolay Tsanov",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "tailwindcss-aspect-ratio": "^3.0.0"
   }
 }

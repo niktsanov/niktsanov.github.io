@@ -1,5 +1,10 @@
 title: Tailwind Jekyll Starter Kit
 description: A starter kit for using Tailwind with Jekyll
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 
 exclude:
   - Gemfile
