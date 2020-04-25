@@ -19,11 +19,12 @@
     "tailwindcss": "1.3.4"
   },
   "scripts": {
+    "add-domain": "echo \"ntsanov.com\" > _site/CNAME",
     "build:production": "cross-env NODE_ENV=production gulp",
     "build:dev": "cross-env NODE_ENV=development gulp",
     "dev": "cross-env NODE_ENV=development gulp serve",
     "start": "npm run dev",
-    "deploy": "npm run build:production && gh-pages -t -b master -d _site"
+    "deploy": "npm run build:production && npm run add-domain && gh-pages -t -b master -d _site"
   },
   "repository": {
     "type": "git",
