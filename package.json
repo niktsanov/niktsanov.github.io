@@ -34,6 +34,7 @@
     "access": "public"
   },
   "dependencies": {
+    "postcss-cli": "^7.1.0",
     "tailwindcss-aspect-ratio": "^3.0.0"
   }
 }

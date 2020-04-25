@@ -1,6 +1,7 @@
 title: Tailwind Jekyll Starter Kit
 description: A starter kit for using Tailwind with Jekyll
-baseurl: "https://ntsanov.com"
+# baseurl: "https://ntsanov.com"
+baseurl: ""
 defaults:
   - scope:
       path: "assets/images"
