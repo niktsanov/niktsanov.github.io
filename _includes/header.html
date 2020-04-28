@@ -13,7 +13,12 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, Laravel, Algolia, VueJS, PHP, TailwindCSS, Symfony, Wordpress, Web Developer, Software Developer, Software Engineer">
 
   <link rel="icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
-	<link rel="shortcut icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
+  
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+
 </head>
 
 <body class="font-body min-h-screen antialiased">
