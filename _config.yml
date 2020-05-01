@@ -24,3 +24,7 @@ exclude:
   - README.md
   - src
   - tailwind.config.js
+  
+url: "https://ntsanov.com" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
