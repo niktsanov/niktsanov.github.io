@@ -1,4 +1,4 @@
-title: Nikolay Tsanov - Web Developer
+title: Web Developer
 description: A full-stack web developer with experience in Laravel and solid background in frontend development.
 # baseurl: "https://ntsanov.com"
 baseurl: ""
@@ -7,6 +7,11 @@ defaults:
       path: "assets/images"
     values:
       image: true
+collections_dir: collections
+collections:
+  projects:
+    output: false
+    permalink: "/:collection/:name"
 
 exclude:
   - Gemfile

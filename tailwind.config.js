@@ -12,6 +12,9 @@ module.exports = {
           '900': '#23283A',
         }
       },
+      boxShadow: {
+        box: '0 2px 8px 0 rgba(0,0,0,.2)'
+      },
       spacing: {
         '1/2': '50%',
         '1/3': '33.333333%',
