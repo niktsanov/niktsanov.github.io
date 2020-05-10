@@ -12,6 +12,9 @@ collections:
   projects:
     output: false
     permalink: "/:collection/:name"
+  posts:
+    output: true
+    permalink: "/posts/:slug"
 
 exclude:
   - Gemfile
@@ -24,7 +27,9 @@ exclude:
   - README.md
   - src
   - tailwind.config.js
-  
+
 url: "https://ntsanov.com" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+markdown: kramdown
+highlighter: rouge
