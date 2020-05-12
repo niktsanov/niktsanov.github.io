@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://ntsanov.com/posts/integrate-google-tag-manager-with-an-existing-cookie-consent-form</loc>
+<loc>https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form</loc>
 <lastmod>2020-05-05T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://ntsanov.com/about.html</loc>
 </url>
 <url>
-<loc>https://ntsanov.com/blog.html</loc>
+<loc>https://ntsanov.com/blog/</loc>
 </url>
 <url>
 <loc>https://ntsanov.com/contact.html</loc>
