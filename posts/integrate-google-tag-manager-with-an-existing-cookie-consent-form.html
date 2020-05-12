@@ -1,0 +1,243 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <script src="https://config.metomic.io/config.js?id=prj:001fb88f-a81d-4eff-a921-05be9a6c373d" crossorigin charset="utf-8"></script>
+  <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nikolay Tsanov - Integrate Google Tag Manager with an existing cookie consent form</title>
+  <link rel="stylesheet" href="https://use.typekit.net/tzd5hjy.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=0.2">
+  <meta name="description" content="A full-stack web developer with experience in Laravel and solid background in frontend development.">
+  <meta name="author" content="Nikolay Tsanov">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Laravel, Algolia, VueJS, PHP, TailwindCSS, Symfony, Wordpress, Web Developer, Software Developer, Software Engineer">
+  <link type="application/atom+xml" rel="alternate" href="https://ntsanov.com/feed.xml" title="Web Developer" />
+
+  <link rel="icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVJ7VRJ');
+</script>
+<!-- End Google Tag Manager -->
+
+</head>
+
+<body class="flex flex-col min-h-screen antialiased">
+
+
+<header class="bg-blue-900 bg-no-repeat bg-right w-full z-20">
+    <div class="max-w-6xl mx-auto p-4 lg:py-8 text-lg">
+        <div class="">
+            <div class="flex flew-wrap justify-between md:content-center items-center">
+                <a href="/" class="inline-block uppercase text-white font-bold tracking-wide">
+                    Tsanov <span class="text-red-500">.</span>
+                </a>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = true"
+                        class="block md:hidden outline-none active:outline-none focus:outline-none text-white js-menu-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0 0 24 24" style=" fill:currentColor;">
+                            <path
+                                d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <div :class="{'expanded' : open === true}"
+                        class="nav-target js-nav-target md:block fixed md:relative top-0 left-0 bg-blue-900 md:bg-transparent h-full md:h-auto w-full md:w-auto p-4 md:p-0">
+                        <div class="text-right">
+                            <button @click="open = false"
+                                class="js-nav-quit inline-block md:hidden outline-none active:outline-none focus:outline-none">
+                                <svg width="28" height="28" viewBox="0 0 24 24" version="1.1"
+                                    class="fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                    xmlns:serif="http://www.serif.com/">
+                                    <g>
+                                        <path d="M2.808,19.778l1.414,1.414l16.97,-16.97l-1.414,-1.414l-16.97,16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                        <path d="M4.222,2.808l-1.414,1.414l16.97,16.97l1.414,-1.414l-16.97,-16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                    </g>
+                                </svg> </button>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row text-lg md:text-base">
+                            <a href="/"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Home
+                            </a>
+                            <a href="/blog"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Blog
+                            </a>
+                            <a href="/projects"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Projects
+                            </a>
+                            <a href="/about"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                About
+                            </a>
+                            <a href="/contact"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-8 md:py-16 text-white text-3xl md:text-5xl">
+            <div class="font-display font-semibold inline-block align-middle">
+                <h1>
+                    Integrate Google Tag Manager with an existing cookie consent form
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+  <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
+    <article class="post-content max-w-3xl mx-auto">
+      <time class="block mb-4 text-gray-600 text-lg md:text-xl">May 05, 2020</time>
+      <p>Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg" alt="Photo by Luke Chesser - Google Analytics" /><em>Photo by <a href="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Luke Chesser</a> on <a href="https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+
+<h2 id="getting-started-with-google-tag-manager-and-google-analytics">Getting started with Google Tag Manager and Google Analytics</h2>
+
+<p>Firstly, we need to set up Google Tag Manager into our existing project and import Google Analytics. Bear in mind, it is really important to remove any previous code related to tracking before adding GTM (I will talk about this later). We will start by adding a new account to Google Tag Manager. For account name, you can choose the name of your project, the name of the company you are working for or anything else you like. Make sure to keep it consistent, soon you might end up with a dozen of projects!</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png" alt="Setup account’s information" /><em>Setup account’s information</em></p>
+
+<p>The account will be the main holder for the containers. A container is simply a bundle of scripts that will execute following some criteria. An example of having multiple containers for one account is if you want to split the various scripts that will run on the main domain and the subdomain. Therefore, you will setup a container for example.com and staging.example.com . We will also pick Web as a targeted platform. Everything here can be changed later on!</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png" alt="Setup a container for the current account" /><em>Setup a container for the current account</em></p>
+
+<p>After you are done setting up everything, you will be prompted with code snippets that you can directly import into your project.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2824/1*sU6UG7e8Ll3-t9jNIGuCXg.png" alt="" /></p>
+
+<p>Note: You do not need the second code snippet if you are not planning on supporting older browser.</p>
+
+<p>However, I prefer using a dedicated package that will act as a wrapper around Google Tag Manager. The package will provide one more level of abstraction. Since the project uses VueJS heavily, I came across this lightweight package <a href="https://github.com/mib200/vue-gtm">https://github.com/mib200/vue-gtm</a> that also automatically loads the GTM script. There are also some additional configuration that you can do, such as enable or disable it based on a condition and more!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install vue-gtm --save
+</code></pre></div></div>
+
+<p>and then import it in your main script, in my case app.js</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">VueGtm</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">vue-gtm</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">VueGtm</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GTM-P42GL2L</span><span class="dl">'</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Now, we want to make sure that we only load GTM and nothing else! This is really important, we do not want to track the same thing twice! A neat way to check for this is by using the Tag Assistant extension, available only on <a href="https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=en">Chrome</a>.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/4248/1*yrkyB_BsXlQGU3N2zMb5uQ.png" alt="" /></p>
+
+<p>Now, navigate to the url of your site and enable the extension (you will probably need to reload when you enable it). You should be displayed with only one tag that has been fired.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*JefPeTP0rBDVh59Odqm3jw.png" alt="" /></p>
+
+<p>However, you might also end up with a “HTTP response code indicates tag failed to fire: Status 404. This could be due to an empty or un-published container”.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*ceHSBNsYgZfc9f-lWcXbRw.png" alt="" /></p>
+
+<p>The warning is pretty self-explanatory, make sure you publish your container or preview it. Both will work. Make sure your container if published for production!</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*pj1XTVkRfECk2YbLNaSNWw.png" alt="" /></p>
+
+<p>Now that we have everything up and running, we can add our Google Analytics Tracking ID to GTM (I assume you already have such, it should be in the format UA-XXXXXXXXX–X). To add a script to your site you need to add a tag in Google Tag Manager. Your tag’s configuration should looks as follows:</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*5wFeLFEoylEmpFZhs-Ca2Q.png" alt="" /></p>
+
+<p>For a tag to be fired (a script to be loaded) on your website, you need to set up a trigger for it. The trigger that we are going to set will read a value from a cookie and based on that fire the tag. Therefore, if the tag is not fired then the user would not get GA cookies set in the browser. We want to fire the tag on all pages so we will select “Page View” as a trigger. But, we also want to restrict this by checking whether we are allowed to fire the tag or not. This can be done by selecting the “Some Page Views” option and adding a new variable or choosing from the existing ones.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*aHEpU9Rb-9KN5CPPerWDkw.png" alt="" /></p>
+
+<p>In our case, we would want to make a custom variable that holds the consent value. Now, there are few options that we can pick. The first one is to make a new variable of type “Custom Javascript” and have some code inside that reads from the document.cookie . While this is a realistic approach, it requires placing logic inside GTM, which I am not fan of. A better approach, in my opinion, is to read from a global javascript variable. As far as I know, most of the popular cookie consent services use a similar approach. This global variable can be controlled from the website.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*HInXP6vnV_mmlozf72znDg.png" alt="" /></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2880/1*k9_Mz70QsvsJRWizpwrvDg.png" alt="" /></p>
+
+<p>Then, our Page View Trigger should fire only when the user consented to statistics.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*KKZzzG_YyvJTpeamJdmKxg.png" alt="" /></p>
+
+<p>We are pretty much done. Now, we only need to add the trigger to the tag we made. On the website, you can present the user with a custom banner, popup or anything else you want. When the user agrees or declines, you can set a cookie which will keep track of the consent. This cookie can be used to set the global variable (every time the page reloads). The good thing now is that GTM does not rely on a cookie, but rather on a global variable that can be set in various ways: local storage, cookies etc.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The amazing part of Google Tag Manager is that it is highly customizable. There are various ways of implementing a GDPR form with it. To finish of, here is a list of great resources where you can explore more about GDPR and GTM:</p>
+
+<ul>
+  <li>
+    <p>Analytics Mania <a href="https://www.analyticsmania.com/post/gdpr-cookie-consent-notification-with-google-tag-manager/">https://www.analyticsmania.com/post/gdpr-cookie-consent-notification-with-google-tag-manager/</a></p>
+  </li>
+  <li>
+    <p>Sebastian Wismayer <a href="https://sebastianwismayer.com/blog/step-by-step-visual-guide-to-gdpr-conform-cookie-consent/">https://sebastianwismayer.com/blog/step-by-step-visual-guide-to-gdpr-conform-cookie-consent/</a></p>
+  </li>
+  <li>
+    <p>Simo Ahava has an amazing blog dedicated to GTM tips &amp; tricks. I highly recommend checking him out at <a href="https://www.simoahava.com/categories/gtm-tips/">https://www.simoahava.com/categories/gtm-tips/</a></p>
+  </li>
+</ul>
+
+<p><strong>Thank you for reading this article! Hope you found it interesting and helpful. You can find me on Twitter (@<a href="https://twitter.com/NikolayTsanov">NikolayTsanov</a>).</strong></p>
+
+      
+        <div class="mt-2">
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">php</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">sass</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">bootstrap</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">jquery</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">html</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">vuejs</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">pusher</span>
+          
+          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">stripe</span>
+          
+      </div>
+      
+    </article>
+  </div>
+</main>
+
+<footer class="bg-blue-900 p-6">
+    <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
+        <p>
+            © 2020 Nikolay Tsanov &nbsp;•&nbsp;
+            <a href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+            <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/6f1d483764.js" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+
+</html>
