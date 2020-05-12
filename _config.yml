@@ -15,7 +15,7 @@ collections:
     permalink: "/:collection/:name"
   posts:
     output: true
-    permalink: "/posts/:slug"
+    permalink: "/blog/:slug"
 
 exclude:
   - Gemfile
