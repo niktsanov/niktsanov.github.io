@@ -31,5 +31,8 @@ exclude:
 url: "https://ntsanov.com" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 markdown: kramdown
 highlighter: rouge
