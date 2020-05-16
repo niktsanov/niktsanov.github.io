@@ -8,13 +8,17 @@
 <main class="flex-grow">
   <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
     <article class="post-content max-w-3xl mx-auto">
-      <time class="block mb-4 text-gray-600 text-lg md:text-xl">{{ page.date | date: '%B %d, %Y' }}</time>
+      <div class="flex items-center text-gray-600 text-base md:text-lg mb-4">
+        <span class="block">{{ site.author }}</span> &nbsp;|&nbsp;
+        <time class="block">{{ page.date | date: '%B %d, %Y' }}</time>
+      </div>
       {{ content }}
       {% if page.tags %}
-        <div class="mt-2">
-          {% for tag in page.tags %}
-          <span class="font-sans inline-block bg-red-200 text-red-800 text-base md:text-lg px-3 rounded-full uppercase mt-2 font-semibold tracking-wide">{{ tag }}</span>
-          {% endfor %}
+      <div class="text-gray-600">
+        <span class="mr-2">Tags:</span>
+        {% for tag in page.tags %}
+        <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
+        {% endfor %}
       </div>
       {% endif %}
     </article>
