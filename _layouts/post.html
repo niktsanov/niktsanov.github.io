@@ -8,11 +8,13 @@
 <main class="flex-grow">
   <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
     <article class="post-content max-w-3xl mx-auto">
-      <div class="flex items-center text-gray-600 text-base md:text-lg mb-4">
-        <span class="block">{{ site.author }}</span> &nbsp;|&nbsp;
-        <time class="block">{{ page.date | date: '%B %d, %Y' }}</time>
+      <div class="flex items-center text-gray-600 text-base md:text-lg mb-5 text-sans">
+        <span>{{ site.author }}</span> &nbsp;|&nbsp;
+        <time>{{ page.date | date: '%B %d, %Y' }}</time>
       </div>
+
       {{ content }}
+
       {% if page.tags %}
       <div class="text-gray-600">
         <span class="mr-2">Tags:</span>
