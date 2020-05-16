@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form</loc>
-<lastmod>2020-05-05T00:00:00+01:00</lastmod>
+<lastmod>2020-05-05T00:00:00+03:00</lastmod>
 </url>
 <url>
 <loc>https://ntsanov.com/about.html</loc>
@@ -21,6 +21,6 @@
 </url>
 <url>
 <loc>https://ntsanov.com/assets/files/CV-NikolayTsanov.pdf</loc>
-<lastmod>2020-04-30T17:08:19+01:00</lastmod>
+<lastmod>2020-04-30T19:08:19+03:00</lastmod>
 </url>
 </urlset>
