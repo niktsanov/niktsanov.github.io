@@ -19,10 +19,13 @@
       <div class="text-gray-600">
         <span class="mr-2">Tags:</span>
         {% for tag in page.tags %}
-        <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
+        <span
+          class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
         {% endfor %}
       </div>
       {% endif %}
+
+      {% include newsletter.html %}
     </article>
   </div>
 </main>
