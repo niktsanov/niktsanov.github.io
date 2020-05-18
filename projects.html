@@ -30,9 +30,9 @@ permalink: /projects/index.html
               {{ project.content | markdownify }}
             </div>
             {% if project.tags %}
-            <div class="mt-3">
+            <div class="mt-3 flex flex-wrap">
               {% for tag in project.tags %}
-              <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2">{{ tag }}</span>
+              <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
               {% endfor %}
             </div>
             {% endif %}
