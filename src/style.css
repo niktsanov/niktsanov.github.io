@@ -32,7 +32,7 @@
     @apply m-auto shadow;
 }
 
-.post-content p {
+.post-content p, ul {
     @apply mb-12;
 }
 
@@ -49,7 +49,11 @@
 }
 
 .post-content ul {
-    @apply list-disc pl-6;
+    @apply list-disc pl-8;
+}
+
+.post-content ul > li {
+    @apply mb-4;
 }
 
 .post-content a {
@@ -61,7 +65,7 @@
 }
 
 .highlighter-rouge {
-    @apply px-6 py-4 mb-4 text-base rounded-lg shadow-sm overflow-scroll relative;
+    @apply px-6 py-4 mb-8 text-base rounded-lg shadow-sm overflow-scroll relative;
     background-color: #f0f0f0;
 }
 
