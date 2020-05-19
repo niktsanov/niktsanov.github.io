@@ -1,6 +1,6 @@
 ---
 name: AttachIT
-client: Nikolay Tsanov, Hrisian Petkov
+client: Nikolay Tsanov
 duration: Nov, 2015 - May, 2020
 tags: [php, sass, bootstrap, jquery, html, vuejs, pusher, stripe]
 ---
