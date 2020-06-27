@@ -1,10 +1,10 @@
 <footer class="bg-blue-900 p-6">
     <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
-        <p>
-            © 2020 Nikolay Tsanov &nbsp;•&nbsp;
-            <a href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
-            <a href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
-            <a href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+        <p x-data="{currentYear: null}" x-init="currentYear = new Date().getFullYear()">
+            © <span x-html="currentYear"></span> Nikolay Tsanov &nbsp;•&nbsp;
+            <a target="_blank" href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a target="_blank" href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
             <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
         </p>
     </div>

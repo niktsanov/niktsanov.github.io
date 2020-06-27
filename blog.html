@@ -11,13 +11,21 @@ tags: [blog, software engineering, web development, tips, tricks]
 <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
   <div class="max-w-3xl mx-auto">
     {% for post in site.posts %}
-      <article class="leading-normal text-gray-900 text-lg md:text-xl mb-10">
-          <h2 class="block font-display font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <div class="block pt-2 text-base md:text-lg text-gray-600">
-            <span>{{ site.author }}</span> &nbsp;|&nbsp;
+      <article class="leading-normal text-gray-900 text-lg md:text-xl mb-16">
+          <h2 class="block font-display font-extrabold text-2xl md:text-3xl lg:text-4xl leading-tight"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <div class="block pt-2 text-sm md:text-base text-gray-600">
             <time>{{ post.date | date: '%B %d, %Y' }}</time>
           </div>
           <div class="pt-4 text-gray-900">{{ post.excerpt }}</div>
+          {% if post.tags %}
+            <div class="mt-3 flex flex-wrap">
+              {% for tag in post.tags %}
+              <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <hr class="mt-16">
       </article>
     {% endfor %}
   </div>
