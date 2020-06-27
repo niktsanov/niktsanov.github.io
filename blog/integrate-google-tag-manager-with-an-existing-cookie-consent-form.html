@@ -27,8 +27,8 @@
   <meta name="theme-color" content="#23283a">
   <link type="application/atom+xml" rel="alternate" href="https://ntsanov.com/feed.xml" title="Nikolay Tsanov - Full-Stack Web Developer" />
 
-  <link rel="icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
-  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
+  <link rel="icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
 
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -63,7 +63,7 @@
     <div class="max-w-6xl mx-auto p-4 lg:py-8 text-lg">
         <div class="">
             <div class="flex flew-wrap justify-between md:content-center items-center">
-                <a href="/" class="inline-block uppercase text-white font-bold tracking-wide">
+                <a href="/" class="inline-block uppercase text-white font-extrabold tracking-wide">
                     Tsanov <span class="text-red-500">.</span>
                 </a>
 
@@ -124,7 +124,7 @@
         </div>
 
         <div class="py-8 md:py-16 text-white text-3xl md:text-5xl">
-            <div class="font-display font-semibold inline-block align-middle">
+            <div class="font-display font-extrabold inline-block align-middle">
                 <h1>
                     Integrate Google Tag Manager with an existing cookie consent form
                 </h1>
@@ -136,9 +136,11 @@
 <main class="flex-grow">
   <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
     <article class="post-content max-w-3xl mx-auto">
-      <div class="flex items-center text-gray-600 text-base md:text-lg mb-5 text-sans">
-        <span>Nikolay Tsanov</span> &nbsp;|&nbsp;
+      <div class="block pt-2 text-sm md:text-base text-gray-600 mb-5">
         <time>May 05, 2020</time>
+      </div>
+      <div class="block pt-2 text-sm md:text-base text-gray-600">
+        <time></time>
       </div>
 
       <p>Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.</p>
@@ -274,7 +276,7 @@
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                 target="_blank" novalidate>
                 <div class="mb-4">
-                    <label for="mce-EMAIL" class="block text-grey-darkest text-sm font-bold mb-2" for="email">
+                    <label for="mce-EMAIL" class="block text-grey-darkest text-sm font-extrabold mb-2" for="email">
                         E-Mail <span class="text-red-600">*</span>
                     </label>
                     <input name="EMAIL" id="mce-EMAIL"
@@ -282,7 +284,7 @@
                         placeholder="Your E-Mail" required="required">
                 </div>
                 <div class="mb-4">
-                    <label class="block text-grey-darkest text-sm font-bold mb-2" for="mce-FNAME">
+                    <label class="block text-grey-darkest text-sm font-extrabold mb-2" for="mce-FNAME">
                         First name
                     </label>
                     <input name="FNAME" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark"
@@ -291,7 +293,7 @@
                 <div class="flex items-center justify-between">
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                             name="b_0c6d3e346535dc283d2898df4_2f29fa6aed" tabindex="-1" value=""></div>
-                    <button class="bg-blue-900 text-white font-bold py-2 px-4 rounded" type="submit">
+                    <button class="bg-blue-900 text-white font-extrabold py-2 px-4 rounded" type="submit">
                         Subscribe
                     </button>
                 </div>
@@ -305,11 +307,11 @@
 
 <footer class="bg-blue-900 p-6">
     <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
-        <p>
-            © 2020 Nikolay Tsanov &nbsp;•&nbsp;
-            <a href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
-            <a href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
-            <a href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+        <p x-data="{currentYear: null}" x-init="currentYear = new Date().getFullYear()">
+            © <span x-html="currentYear"></span> Nikolay Tsanov &nbsp;•&nbsp;
+            <a target="_blank" href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a target="_blank" href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
             <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
         </p>
     </div>

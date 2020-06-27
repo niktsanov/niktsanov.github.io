@@ -27,8 +27,8 @@
   <meta name="theme-color" content="#23283a">
   <link type="application/atom+xml" rel="alternate" href="https://ntsanov.com/feed.xml" title="Nikolay Tsanov - Full-Stack Web Developer" />
 
-  <link rel="icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
-  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=1" type="image/x-icon" />
+  <link rel="icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
 
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -64,7 +64,7 @@
     <div class="max-w-6xl mx-auto p-4 lg:py-8 text-lg">
         <div class="">
             <div class="flex flew-wrap justify-between md:content-center items-center">
-                <a href="/" class="inline-block uppercase text-white font-bold tracking-wide">
+                <a href="/" class="inline-block uppercase text-white font-extrabold tracking-wide">
                     Tsanov <span class="text-red-500">.</span>
                 </a>
 
@@ -125,7 +125,7 @@
         </div>
 
         <div class="py-8 md:py-16 text-white text-3xl md:text-5xl">
-            <div class="font-display font-semibold inline-block align-middle">
+            <div class="font-display font-extrabold inline-block align-middle">
                 <h1>
                     About
                 </h1>
@@ -186,14 +186,14 @@
 
 <section class="bg-blue-900 border-b border-gray-700">
     <div class="container mx-auto px-6 text-center py-20">
-        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+        <h2 class="mb-6 text-4xl font-extrabold text-center text-white">
             Interested in working together?
         </h2>
         <h3 class="my-4 text-2xl text-white">
             If you want to discuss a future or an ongoing project, feel free to drop me a line
         </h3>
         <a href="/contact"
-            class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider inline-block">
+            class="bg-white font-extrabold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider inline-block">
             Contact Me
         </a>
     </div>
@@ -202,11 +202,11 @@
 
 <footer class="bg-blue-900 p-6">
     <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
-        <p>
-            © 2020 Nikolay Tsanov &nbsp;•&nbsp;
-            <a href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
-            <a href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
-            <a href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+        <p x-data="{currentYear: null}" x-init="currentYear = new Date().getFullYear()">
+            © <span x-html="currentYear"></span> Nikolay Tsanov &nbsp;•&nbsp;
+            <a target="_blank" href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a target="_blank" href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
             <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
         </p>
     </div>
