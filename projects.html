@@ -8,12 +8,12 @@ tags: [HTML, CSS, JavaScript, Laravel, Algolia, VueJS, PHP, TailwindCSS, Symfony
 {% include header.html %}
 
 <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-3xl mx-auto mb-8">
     <p class="leading-normal text-gray-900 text-lg md:text-xl mb-10">I have been working on a various long-term projects
       alongside some university ones.</p>
 
     {% for project in site.projects %}
-      <div class="shadow-box max-w-sm w-full lg:max-w-full lg:flex mt-8 cursor-pointer">
+      <div class="shadow-box max-w-sm w-full lg:max-w-full lg:flex mt-10 cursor-pointer">
         {% if project.image %}
           <div
             class="h-48 lg:h-auto lg:w-56 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
@@ -22,7 +22,7 @@ tags: [HTML, CSS, JavaScript, Laravel, Algolia, VueJS, PHP, TailwindCSS, Symfony
             " title="{{ project.name }}"></div>
         {% endif %}
         <div
-          class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-6 flex flex-col justify-between leading-normal">
           <div class="mb-8">
             <div class="text-gray-900 font-extrabold text-xl flex flex-wrap items-center">
               <h2 class="mr-3 mb-2">{{ project.name }}</h2>

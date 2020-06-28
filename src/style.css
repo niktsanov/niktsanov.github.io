@@ -25,7 +25,7 @@
 }
 
 .post-content {
-    @apply font-serif leading-relaxed tracking-normal break-words;
+    @apply font-serif leading-relaxed tracking-normal break-words text-lg;
 }
 
 .post-content img {
@@ -37,7 +37,7 @@
 }
 
 /* .post-content p:first-of-type {
-    @apply font-extrabold;
+    @apply font-bold;
 } */
 
 .post-content h2 {
