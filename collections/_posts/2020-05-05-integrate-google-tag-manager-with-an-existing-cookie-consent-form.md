@@ -1,7 +1,7 @@
 ---
 title: Integrate Google Tag Manager with an existing cookie consent form
 layout: post
-tags: [php, sass, bootstrap, jquery, html, vuejs, pusher, stripe]
+tags: [seo, googletagmanager, googleanalytics, js]
 categories: [SEO]
 ---
 

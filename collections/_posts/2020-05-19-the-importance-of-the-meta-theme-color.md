@@ -1,8 +1,8 @@
 ---
 title: The Importance of the Meta Theme Color
 layout: post
-tags: [html, UX, web development]
-categories: [UX]
+tags: [html, ux, css]
+categories: [Web Development]
 ---
 
 You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.
