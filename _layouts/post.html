@@ -7,25 +7,37 @@
 
 <main class="flex-grow">
   <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
-    <article class="post-content max-w-3xl mx-auto">
+
+    <div class="max-w-3xl mx-auto">
       <div class="block pt-2 text-sm md:text-base text-gray-600 mb-5">
+        {% if page.categories %}
+          {% for category in page.categories %}
+              <a class="font-semibold text-red-500" href="/category/{{ category | slugify }}">{{ category }}</a>
+              {{ not loop.last ? "," }}
+          {% endfor %}
+          <span class="px-1"> / </span>
+        {% endif %}
+        
         <time>{{ page.date | date: '%B %d, %Y' }}</time>
       </div>
 
-      {{ content }}
+      <article class="post-content">
+        {{ content }}
+  
+        {% if page.tags %}
+        <div class="text-gray-600">
+          <span class="mr-2">Tags:</span>
+          {% for tag in page.tags %}
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+  
+        {% include newsletter.html %}
+      </article>
+    </div>
 
-      {% if page.tags %}
-      <div class="text-gray-600">
-        <span class="mr-2">Tags:</span>
-        {% for tag in page.tags %}
-        <span
-          class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">{{ tag }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
-
-      {% include newsletter.html %}
-    </article>
   </div>
 </main>
 

@@ -28,8 +28,16 @@
     @apply font-serif leading-relaxed tracking-normal break-words text-lg;
 }
 
+.twitter-tweet {
+    margin-bottom: 3rem !important;
+}
+
+.post-content > p:first-child {
+    @apply font-semibold;
+}
+
 .post-content img {
-    @apply m-auto shadow;
+    @apply m-auto;
 }
 
 .post-content p, ul {

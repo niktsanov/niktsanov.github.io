@@ -1,0 +1,15 @@
+---
+---
+{% include head.html %}
+
+{% include header.html %}
+
+<div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
+    <div class="max-w-3xl mx-auto">
+        {% for post in page.posts %}
+            {% include article.html post=post %}
+        {% endfor %}
+    </div>
+</div>
+
+{% include footer.html %}
