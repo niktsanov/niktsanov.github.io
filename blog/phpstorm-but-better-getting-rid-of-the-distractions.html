@@ -1,0 +1,341 @@
+<!doctype html>
+<html class="no-js" lang="en-US" style="font-size: 16px;">
+
+<head>
+  <script src="https://config.metomic.io/config.js?id=prj:5bbdee0c-6eca-49de-b165-c7aba251f882" crossorigin
+    charset="utf-8"></script>
+  <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    
+      PhpStorm, But Better! #1 - Getting Rid Of The Distractions - Nikolay Tsanov
+    
+  </title>
+  <link rel="stylesheet" href="https://use.typekit.net/tzd5hjy.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=0.2">
+  <meta itemprop="description" name="description"
+    content="A full-stack web developer with experience in Laravel and solid background in frontend development." />
+  <meta name="author" content="Nikolay Tsanov">
+
+  
+  <meta name="keywords" content="phpstorm, tools, php">
+  
+
+  <meta name="theme-color" content="#23283a">
+  <link type="application/atom+xml" rel="alternate" href="https://ntsanov.com/feed.xml" title="Nikolay Tsanov - Full-Stack Web Developer" />
+
+  <link rel="icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVJ7VRJ');
+</script>
+<!-- End Google Tag Manager -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Nikolay Tsanov",
+      "url": "http://ntsanov.com/",
+      "image": "https://ntsanov.com/assets/images/me-300x300.jpg",
+      "sameAs": [
+        "https://twitter.com/NikolayTsanov",
+        "https://www.linkedin.com/in/ntsanov/",
+        "https://github.com/niktsanov"
+      ],
+      "description": "A full-stack web developer with experience in Laravel and solid background in frontend development.",
+      "jobTitle": "Full-Stack Web Developer"
+    }
+    </script>
+</head>
+
+<body class="flex flex-col min-h-screen antialiased">
+
+<header class="bg-blue-900 bg-no-repeat bg-right w-full z-20">
+    <div class="max-w-6xl mx-auto p-4 lg:py-8 text-lg">
+        <div class="">
+            <div class="flex flew-wrap justify-between md:content-center items-center">
+                <a href="/" class="inline-block uppercase text-white font-semibold tracking-wide">
+                    Tsanov <span class="text-red-500">.</span>
+                </a>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = true"
+                        class="block md:hidden outline-none active:outline-none focus:outline-none text-white js-menu-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0 0 24 24" style=" fill:currentColor;">
+                            <path
+                                d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <div :class="{'expanded' : open === true}"
+                        class="nav-target js-nav-target md:block fixed md:relative top-0 left-0 bg-blue-900 md:bg-transparent h-full md:h-auto w-full md:w-auto p-4 md:p-0">
+                        <div class="text-right">
+                            <button @click="open = false"
+                                class="js-nav-quit inline-block md:hidden outline-none active:outline-none focus:outline-none">
+                                <svg width="28" height="28" viewBox="0 0 24 24" version="1.1"
+                                    class="fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                    xmlns:serif="http://www.serif.com/">
+                                    <g>
+                                        <path d="M2.808,19.778l1.414,1.414l16.97,-16.97l-1.414,-1.414l-16.97,16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                        <path d="M4.222,2.808l-1.414,1.414l16.97,16.97l1.414,-1.414l-16.97,-16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                    </g>
+                                </svg> </button>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row text-lg md:text-base">
+                            <a href="/"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Home
+                            </a>
+                            <a href="/blog"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Blog
+                            </a>
+                            <a href="/projects"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Projects
+                            </a>
+                            <a href="/about"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                About
+                            </a>
+                            <a href="/contact"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-8 md:py-16 text-white text-3xl md:text-5xl">
+            <div class="font-display font-extrabold inline-block align-middle">
+                <h1>
+                    PhpStorm, But Better! #1 - Getting Rid Of The Distractions
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+  <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
+
+    <div class="max-w-3xl mx-auto">
+      <div class="block pt-2 text-sm md:text-base text-gray-600 mb-5">
+        
+          
+              <a class="font-semibold text-red-500" href="/category/phpstorm-but-better">PhpStorm, But Better</a>
+              
+          
+          <span class="px-1"> / </span>
+        
+        
+        <time>July 10, 2020</time>
+      </div>
+
+      <article class="post-content">
+        <p>This is an archive of the first email from the series - <a href="http://phpstormbutbetter.com/">“PhpStorm, But Better!”</a>. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!</p>
+
+<p>I plan to help you improve your PHPStorm workflow by synthesizing useful resources, news, plugins and much more. Over time, your use of the IDE will drastically change and your performance will be significantly improved.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/0.png" alt="" /></p>
+
+<p>Before I start, I want to present you with a few principles that I enforce when working with the IDE (If you follow Caleb’s amazing newsletter about working with VS Code (<a href="https://makevscodeawesome.com/">www.makevscodeawesome.com</a>), you might be aware of some of them):</p>
+
+<p>Fewer distractions on the screen, more productive workflow.
+The theme and font are important! (I cannot stress this enough! You’re going to be staring at the IDE for hours, you must make it easy on your eyes and brain!)
+Shortcodes, shortcodes and more shortcodes! (If you can automate some actions, you should do it. There are many services that we, as developers, use that automate tedious tasks, we should do the same for our IDE).
+Don’t rely on your IDE blindly! (You’ll find out what I mean at a later point).
+These are the core principles I follow when working with a specific IDE. If you don’t agree with them, that is perfectly fine! Consider this newsletter as an alternative point of view that might be helpful to you as well! The good thing about it, you can apply most of the information here to other JetBrains’s products - Intellij IDEA, WebStorm, PyCharm and more (you can find a list of their products on their <a href="https://www.jetbrains.com/products.html">website</a>). The beauty of the JetBrain’s ecosystem is that their products are consistent, most of the settings are shared between them, so you can easily find your way. I’m not sponsored to say all of this, just my opinion!</p>
+
+<p>For students and teachers, you can get access to PHPStorm for free! More information can be found on JetBrains’ website - or a simple Google search will do the trick as well. However, the purpose of these free licenses is for education only. If you are planning on using it on a commercial project, you’ll have to purchase an individual license.</p>
+
+<p>Side note, I cannot express how thankful I am to the amazing PHP community! I’ll try to be as much transparent as possible about the newsletter by sharing statistics that might be helpful for those of you that want to start something similar. You can follow me on Twitter (<a href="https://twitter.com/NikolayTsanov">@NikolayTsanov</a>) for more of the insights.</p>
+
+<p>Without further ado let’s start with the first topic of the newsletter - getting rid of the distractions and styling your IDE (not only for you to look cool in front of your colleagues, but also important for your productivity).</p>
+
+<p>Note: for windows users, some of the shortcodes that I’ll reference might be a bit different - when I mention the <strong>Cmd</strong> key, you need to replace it with <strong>Ctrl</strong>. (More on the keymaps between PC and macOS can be found on the Microsoft’s <a href="https://support.microsoft.com/en-us/help/970299/keyboard-mappings-using-a-pc-keyboard-on-a-macintosh">website</a>).</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+<p><strong>Topic I - Aestetics</strong></p>
+<ul>
+  <li><strong>Removing the Panels and Floating Tools</strong></li>
+  <li><strong>Moving the Sidebar (Projects Explorer)</strong></li>
+  <li>Picking up a Theme (determine the best theme based on your surrounding)</li>
+  <li>Picking up a Font (determine the best font for readability)</li>
+  <li>Better Icons</li>
+</ul>
+
+<h2 id="removing-the-panels-and-floating-tools">Removing the Panels and Floating Tools</h2>
+<p>As I mentioned a few times already, panels are distractions. Hiding them will be more beneficial to you. If you need them, you can always toggle or assign a shortcode for easy access. In PHPStorm, there are plenty of them, most of which you’ll probably never use. This is what you’ll most probably have at the beginning:</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/1.png" alt="" /></p>
+
+<p>As you can see, your attention is “hijacked” by the information spilt on your screen. We’ll start off by removing the bars (Navigation Bar and Status Bar). Easiest way to do so is by going <strong>View &gt; Appearance &gt; Status Bar</strong>. All of these options are available by also doing <strong>Navigate &gt; Search Everywhere &gt; type “status bar” &gt; Show Status Bar (to off)</strong>.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/2.png" alt="" /></p>
+
+<p>Great! Now that we have the Status Bar removed, we can also get rid of the Tool Window Bars (<strong>View &gt; Appearance &gt; Tool Window Bar</strong> or <strong>Navigate &gt; Search Everywhere &gt; type “tool window bar” &gt; Hide Tool Window Bar (to on)</strong>).</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/3.png" alt="" /></p>
+
+<p>It already looks way better than before. However, there are still two panels left. By doing <strong>View &gt; Appearance &gt; Navigation Bar</strong> or <strong>Navigate &gt; Search Everywhere &gt; type “navigation bar” &gt; Show Navigation Bar (to off)</strong> we get rid of a huge portion of the taken space.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/4.png" alt="" /></p>
+
+<p>Then, we are left with the floating browsers. Let’s be honest, probably nobody uses them that often.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/5.png" alt="" /></p>
+
+<p>They can be removed simply by going to the PHPStorm’s settings and deselecting them. <strong>PhpStorm &gt; Preferences &gt; Tools &gt; Web Browsers</strong>, alternatively <strong>File &gt; Settings &gt; Tools &gt; Web Browsers (on Windows and Linux)</strong>.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/6.png" alt="" /></p>
+
+<p>We finally end up with a clean and distraction-free IDE.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/7.png" alt="" /></p>
+
+<p>Although, there is still a bit more left. On the bottom part of the window you can see the breadcrumbs. They are considered helpful by many, however, I personally never look at them (so I tend to hide them). It is your decision to make, to hide them you can just do <strong>Navigate &gt; Search Everywhere &gt; type “breadcrumbs” &gt; Show Breadcrumbs (to off)</strong> or <strong>PhpStorm &gt; Preferences &gt; Editor &gt; General &gt; Breadcrumbs &gt; Show breadcrumbs (on macOS)</strong>, alternatively <strong>File &gt; Settings &gt; Editor &gt; General &gt; Breadcrumbs &gt; Show breadcrumbs (on Windows and Linux)</strong>. In the settings, you can see that you have the option where to place them (top or bottom) and for which languages to show them. Completely up to you!</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/8.png" alt="" /></p>
+
+<p>Now you might ask yourself, “Why didn’t he hide the tabs?”. I enjoy using the tabs, there are some tricks that we’ll explore later in the series on how to limit the number of them and how to easily switch left and right using the keyboard. When working on multiple files, I find myself switching often between them (even with split screen). Using less brainpower to remember which file I have to search and switch to every time I’m working is something that I enjoy and you’ll probably notice it as well in the long run.</p>
+
+<h2 id="moving-the-sidebar-tool-window-or-project-explorer">Moving the Sidebar (Tool Window or “Project” Explorer)</h2>
+<p>If you are like me, you’re probably toggling the sidebar from time to time. You probably have a shortcode (keymap) that you use all the time (we’ll explore this at a later point). What happens when the sidebar is on the left is that it pushes the code every single time you make it visible or hide it. Ideally, you won’t need it that often, however, for the times that you actually need it, I prefer to have it on the right side. It is pretty straightforward, <strong>⚙ (Gear Icon) &gt; Move To &gt; Right Top</strong>.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/9.png" alt="" /></p>
+
+<p>Then, your IDE starts getting in shape. However, still long way to go! In the next email, we’ll explore themes (why you should pick up based on your surrounding), fonts and more!</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/10.png" alt="" /></p>
+
+<h2 id="next-time">Next Time</h2>
+<p>I want to keep the reading time relatively small. So some of the topics that I’ll cover will be split into multiple parts. Next time, I’ll cover:</p>
+
+<ul>
+  <li>Picking up a Theme (determine the best theme based on your surrounding)</li>
+  <li>Picking up a Font (determine the best font for readability)</li>
+  <li>Better Icons</li>
+</ul>
+
+<p>And we’ll slowly start getting into more complex material (PSR-12, shortcodes, settings and more).</p>
+
+<h2 id="more-useful-materials">More Useful Materials</h2>
+<ul>
+  <li>Christoph Rumpel has nicely <a href="https://www.youtube.com/watch?v=3SUtEnMj1ws">illustrated</a> some of the concepts that I’ve covered in this email. Make sure to check him out!</li>
+  <li>If you want to find more on how to set up PHPStorm with XDebug &amp; Docker, you can find Derick Rethans’s <a href="https://vimeo.com/433218463">walkthrough</a> interesting. Derick is also the creator of XDebug, so he’s the best person you can find for the job.</li>
+  <li>For the people using Laravel’s Homestead, Daniel Verner’s <a href="https://42coders.com/how-to-set-up-debugging-with-phpstorm-and-homestead/">post</a> on this topic will be of a good use!</li>
+  <li>PHPStorm is known to have some performance issues. Project Lanai is a joint effort between JetBrains and Oracle that looks to solve this. Check Alex Vanderbist’s (member of Spatie) <a href="https://alexvanderbist.com/2020/enable-early-access-metal-support-for-jetbrains-ides/">post</a> on this topic.</li>
+</ul>
+
+<p>You can also be on the list! Make sure you contact me with a link to your work related to PHPStorm. If I find it useful, it will be included in the next email!</p>
+
+<h2 id="news-things-that-you-might-have-missed">News (Things That You Might Have Missed)</h2>
+<ul>
+  <li>PHPStorm 2020.1.3 has been released! Mainly bug fixes - make sure you check out the <a href="https://blog.jetbrains.com/phpstorm/2020/07/phpstorm-2020-1-3-is-released/?fbclid=IwAR3Fvp5o46N0OFfJGlLp9kInWfk9h-VPITwM-By-01zbJlfmyjOSFK3YRDA">changelog</a>.</li>
+  <li>Support for Psalm is <a href="https://blog.jetbrains.com/phpstorm/2020/07/phpstan-and-psalm-support-coming-to-phpstorm/">coming soon</a> (probably 2020.3).</li>
+  <li>PHPStorm 2020.2 will introduce many cool stuff including PHP 8 Union Types support. Read more on their <a href="https://blog.jetbrains.com/phpstorm/2020/07/phpstorm-2020-2-eap-6-union-nbsp-types-are-here/">blog</a>!</li>
+</ul>
+
+<blockquote class="twitter-tweet tw-align-center pb-2"><p lang="en" dir="ltr">I only have two elephpants btw, how about you? Share a pic! <a href="https://t.co/AyIHQcT0K6">pic.twitter.com/AyIHQcT0K6</a></p>&mdash; Brent (@brendt_gd) <a href="https://twitter.com/brendt_gd/status/1279056896230645773?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>If you want to get one of these cute elephpants which are not for sale yet. The staff of PHPStorm is sending them to the most active EAPers! So make sure you try the latest builds and give feedback and you might win one!</p>
+
+<p><strong>I’m really excited to hear what you think about the newsletter. Make sure you drop me a line on <a href="https://twitter.com/NikolayTsanov">Twitter</a>! I really appreciate spreading the word about this and I’m welcoming all suggestions!</strong></p>
+
+  
+        
+        <div class="text-gray-600">
+          <span class="mr-2">Tags:</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">phpstorm</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">tools</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">php</span>
+          
+        </div>
+        
+  
+        <div class="w-full bg-gray-100 shadow-md rounded p-8 sm:p-10 mt-12 mb-8 border-b-4 border-blue-900">
+    <div class="flex items-center flex-col sm:flex-row mb-4">
+        <div class="w-full sm:w-1/2">
+            <h2 class="mt-0">Let's stay in touch</h2>
+            <p class="text-lg">Sign up for my newsletter and I will let you know about more content and new projects.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 ">
+            <form
+                action="https://ntsanov.us18.list-manage.com/subscribe/post?u=0c6d3e346535dc283d2898df4&amp;id=2f29fa6aed"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div class="mb-4">
+                    <label for="mce-EMAIL" class="block text-grey-darkest text-sm font-extrabold mb-2" for="email">
+                        E-Mail <span class="text-red-600">*</span>
+                    </label>
+                    <input name="EMAIL" id="mce-EMAIL"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark" type="email"
+                        placeholder="Your E-Mail" required="required">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-grey-darkest text-sm font-extrabold mb-2" for="mce-FNAME">
+                        First name
+                    </label>
+                    <input name="FNAME" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark"
+                        id="mce-FNAME" type="text" placeholder="Your first name">
+                </div>
+                <div class="flex items-center justify-between">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_0c6d3e346535dc283d2898df4_2f29fa6aed" tabindex="-1" value=""></div>
+                    <button class="bg-blue-900 text-white font-extrabold py-2 px-4 rounded" type="submit">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+      </article>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-blue-900 p-6">
+    <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
+        <p x-data="{currentYear: null}" x-init="currentYear = new Date().getFullYear()">
+            © <span x-html="currentYear"></span> Nikolay Tsanov &nbsp;•&nbsp;
+            <a target="_blank" href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a target="_blank" href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+            <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/6f1d483764.js" crossorigin="anonymous" async defer></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" async defer></script>
+</body>
+
+</html>

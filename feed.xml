@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://ntsanov.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ntsanov.com/" rel="alternate" type="text/html" /><updated>2020-06-28T18:35:58+03:00</updated><id>https://ntsanov.com/feed.xml</id><title type="html">Nikolay Tsanov - Full-Stack Web Developer</title><subtitle>A full-stack web developer with experience in Laravel and solid background in frontend development.</subtitle><author><name>Nikolay Tsanov</name></author><entry><title type="html">The Importance of the Meta Theme Color</title><link href="https://ntsanov.com/blog/the-importance-of-the-meta-theme-color" rel="alternate" type="text/html" title="The Importance of the Meta Theme Color" /><published>2020-05-19T00:00:00+03:00</published><updated>2020-05-19T00:00:00+03:00</updated><id>https://ntsanov.com/blog/the-importance-of-the-meta-theme-color</id><content type="html" xml:base="https://ntsanov.com/blog/the-importance-of-the-meta-theme-color">&lt;p&gt;You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://ntsanov.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ntsanov.com/" rel="alternate" type="text/html" /><updated>2020-07-11T10:05:05+03:00</updated><id>https://ntsanov.com/feed.xml</id><title type="html">Nikolay Tsanov - Full-Stack Web Developer</title><subtitle>A full-stack web developer with experience in Laravel and solid background in frontend development.</subtitle><author><name>Nikolay Tsanov</name></author><entry><title type="html">PhpStorm, But Better! #1 - Getting Rid Of The Distractions</title><link href="https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions" rel="alternate" type="text/html" title="PhpStorm, But Better! #1 - Getting Rid Of The Distractions" /><published>2020-07-10T00:00:00+03:00</published><updated>2020-07-10T00:00:00+03:00</updated><id>https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions</id><content type="html" xml:base="https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions">&lt;p&gt;This is an archive of the first email from the series - &lt;a href=&quot;http://phpstormbutbetter.com/&quot;&gt;“PhpStorm, But Better!”&lt;/a&gt;. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!&lt;/p&gt;
+
+&lt;p&gt;I plan to help you improve your PHPStorm workflow by synthesizing useful resources, news, plugins and much more. Over time, your use of the IDE will drastically change and your performance will be significantly improved.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I start, I want to present you with a few principles that I enforce when working with the IDE (If you follow Caleb’s amazing newsletter about working with VS Code (&lt;a href=&quot;https://makevscodeawesome.com/&quot;&gt;www.makevscodeawesome.com&lt;/a&gt;), you might be aware of some of them):&lt;/p&gt;
+
+&lt;p&gt;Fewer distractions on the screen, more productive workflow.
+The theme and font are important! (I cannot stress this enough! You’re going to be staring at the IDE for hours, you must make it easy on your eyes and brain!)
+Shortcodes, shortcodes and more shortcodes! (If you can automate some actions, you should do it. There are many services that we, as developers, use that automate tedious tasks, we should do the same for our IDE).
+Don’t rely on your IDE blindly! (You’ll find out what I mean at a later point).
+These are the core principles I follow when working with a specific IDE. If you don’t agree with them, that is perfectly fine! Consider this newsletter as an alternative point of view that might be helpful to you as well! The good thing about it, you can apply most of the information here to other JetBrains’s products - Intellij IDEA, WebStorm, PyCharm and more (you can find a list of their products on their &lt;a href=&quot;https://www.jetbrains.com/products.html&quot;&gt;website&lt;/a&gt;). The beauty of the JetBrain’s ecosystem is that their products are consistent, most of the settings are shared between them, so you can easily find your way. I’m not sponsored to say all of this, just my opinion!&lt;/p&gt;
+
+&lt;p&gt;For students and teachers, you can get access to PHPStorm for free! More information can be found on JetBrains’ website - or a simple Google search will do the trick as well. However, the purpose of these free licenses is for education only. If you are planning on using it on a commercial project, you’ll have to purchase an individual license.&lt;/p&gt;
+
+&lt;p&gt;Side note, I cannot express how thankful I am to the amazing PHP community! I’ll try to be as much transparent as possible about the newsletter by sharing statistics that might be helpful for those of you that want to start something similar. You can follow me on Twitter (&lt;a href=&quot;https://twitter.com/NikolayTsanov&quot;&gt;@NikolayTsanov&lt;/a&gt;) for more of the insights.&lt;/p&gt;
+
+&lt;p&gt;Without further ado let’s start with the first topic of the newsletter - getting rid of the distractions and styling your IDE (not only for you to look cool in front of your colleagues, but also important for your productivity).&lt;/p&gt;
+
+&lt;p&gt;Note: for windows users, some of the shortcodes that I’ll reference might be a bit different - when I mention the &lt;strong&gt;Cmd&lt;/strong&gt; key, you need to replace it with &lt;strong&gt;Ctrl&lt;/strong&gt;. (More on the keymaps between PC and macOS can be found on the Microsoft’s &lt;a href=&quot;https://support.microsoft.com/en-us/help/970299/keyboard-mappings-using-a-pc-keyboard-on-a-macintosh&quot;&gt;website&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Topic I - Aestetics&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Removing the Panels and Floating Tools&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Moving the Sidebar (Projects Explorer)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Picking up a Theme (determine the best theme based on your surrounding)&lt;/li&gt;
+  &lt;li&gt;Picking up a Font (determine the best font for readability)&lt;/li&gt;
+  &lt;li&gt;Better Icons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;removing-the-panels-and-floating-tools&quot;&gt;Removing the Panels and Floating Tools&lt;/h2&gt;
+&lt;p&gt;As I mentioned a few times already, panels are distractions. Hiding them will be more beneficial to you. If you need them, you can always toggle or assign a shortcode for easy access. In PHPStorm, there are plenty of them, most of which you’ll probably never use. This is what you’ll most probably have at the beginning:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, your attention is “hijacked” by the information spilt on your screen. We’ll start off by removing the bars (Navigation Bar and Status Bar). Easiest way to do so is by going &lt;strong&gt;View &amp;gt; Appearance &amp;gt; Status Bar&lt;/strong&gt;. All of these options are available by also doing &lt;strong&gt;Navigate &amp;gt; Search Everywhere &amp;gt; type “status bar” &amp;gt; Show Status Bar (to off)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Great! Now that we have the Status Bar removed, we can also get rid of the Tool Window Bars (&lt;strong&gt;View &amp;gt; Appearance &amp;gt; Tool Window Bar&lt;/strong&gt; or &lt;strong&gt;Navigate &amp;gt; Search Everywhere &amp;gt; type “tool window bar” &amp;gt; Hide Tool Window Bar (to on)&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It already looks way better than before. However, there are still two panels left. By doing &lt;strong&gt;View &amp;gt; Appearance &amp;gt; Navigation Bar&lt;/strong&gt; or &lt;strong&gt;Navigate &amp;gt; Search Everywhere &amp;gt; type “navigation bar” &amp;gt; Show Navigation Bar (to off)&lt;/strong&gt; we get rid of a huge portion of the taken space.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, we are left with the floating browsers. Let’s be honest, probably nobody uses them that often.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They can be removed simply by going to the PHPStorm’s settings and deselecting them. &lt;strong&gt;PhpStorm &amp;gt; Preferences &amp;gt; Tools &amp;gt; Web Browsers&lt;/strong&gt;, alternatively &lt;strong&gt;File &amp;gt; Settings &amp;gt; Tools &amp;gt; Web Browsers (on Windows and Linux)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We finally end up with a clean and distraction-free IDE.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Although, there is still a bit more left. On the bottom part of the window you can see the breadcrumbs. They are considered helpful by many, however, I personally never look at them (so I tend to hide them). It is your decision to make, to hide them you can just do &lt;strong&gt;Navigate &amp;gt; Search Everywhere &amp;gt; type “breadcrumbs” &amp;gt; Show Breadcrumbs (to off)&lt;/strong&gt; or &lt;strong&gt;PhpStorm &amp;gt; Preferences &amp;gt; Editor &amp;gt; General &amp;gt; Breadcrumbs &amp;gt; Show breadcrumbs (on macOS)&lt;/strong&gt;, alternatively &lt;strong&gt;File &amp;gt; Settings &amp;gt; Editor &amp;gt; General &amp;gt; Breadcrumbs &amp;gt; Show breadcrumbs (on Windows and Linux)&lt;/strong&gt;. In the settings, you can see that you have the option where to place them (top or bottom) and for which languages to show them. Completely up to you!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you might ask yourself, “Why didn’t he hide the tabs?”. I enjoy using the tabs, there are some tricks that we’ll explore later in the series on how to limit the number of them and how to easily switch left and right using the keyboard. When working on multiple files, I find myself switching often between them (even with split screen). Using less brainpower to remember which file I have to search and switch to every time I’m working is something that I enjoy and you’ll probably notice it as well in the long run.&lt;/p&gt;
+
+&lt;h2 id=&quot;moving-the-sidebar-tool-window-or-project-explorer&quot;&gt;Moving the Sidebar (Tool Window or “Project” Explorer)&lt;/h2&gt;
+&lt;p&gt;If you are like me, you’re probably toggling the sidebar from time to time. You probably have a shortcode (keymap) that you use all the time (we’ll explore this at a later point). What happens when the sidebar is on the left is that it pushes the code every single time you make it visible or hide it. Ideally, you won’t need it that often, however, for the times that you actually need it, I prefer to have it on the right side. It is pretty straightforward, &lt;strong&gt;⚙ (Gear Icon) &amp;gt; Move To &amp;gt; Right Top&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, your IDE starts getting in shape. However, still long way to go! In the next email, we’ll explore themes (why you should pick up based on your surrounding), fonts and more!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-getting-rid-of-the-distractions/10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;next-time&quot;&gt;Next Time&lt;/h2&gt;
+&lt;p&gt;I want to keep the reading time relatively small. So some of the topics that I’ll cover will be split into multiple parts. Next time, I’ll cover:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Picking up a Theme (determine the best theme based on your surrounding)&lt;/li&gt;
+  &lt;li&gt;Picking up a Font (determine the best font for readability)&lt;/li&gt;
+  &lt;li&gt;Better Icons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And we’ll slowly start getting into more complex material (PSR-12, shortcodes, settings and more).&lt;/p&gt;
+
+&lt;h2 id=&quot;more-useful-materials&quot;&gt;More Useful Materials&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Christoph Rumpel has nicely &lt;a href=&quot;https://www.youtube.com/watch?v=3SUtEnMj1ws&quot;&gt;illustrated&lt;/a&gt; some of the concepts that I’ve covered in this email. Make sure to check him out!&lt;/li&gt;
+  &lt;li&gt;If you want to find more on how to set up PHPStorm with XDebug &amp;amp; Docker, you can find Derick Rethans’s &lt;a href=&quot;https://vimeo.com/433218463&quot;&gt;walkthrough&lt;/a&gt; interesting. Derick is also the creator of XDebug, so he’s the best person you can find for the job.&lt;/li&gt;
+  &lt;li&gt;For the people using Laravel’s Homestead, Daniel Verner’s &lt;a href=&quot;https://42coders.com/how-to-set-up-debugging-with-phpstorm-and-homestead/&quot;&gt;post&lt;/a&gt; on this topic will be of a good use!&lt;/li&gt;
+  &lt;li&gt;PHPStorm is known to have some performance issues. Project Lanai is a joint effort between JetBrains and Oracle that looks to solve this. Check Alex Vanderbist’s (member of Spatie) &lt;a href=&quot;https://alexvanderbist.com/2020/enable-early-access-metal-support-for-jetbrains-ides/&quot;&gt;post&lt;/a&gt; on this topic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can also be on the list! Make sure you contact me with a link to your work related to PHPStorm. If I find it useful, it will be included in the next email!&lt;/p&gt;
+
+&lt;h2 id=&quot;news-things-that-you-might-have-missed&quot;&gt;News (Things That You Might Have Missed)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;PHPStorm 2020.1.3 has been released! Mainly bug fixes - make sure you check out the &lt;a href=&quot;https://blog.jetbrains.com/phpstorm/2020/07/phpstorm-2020-1-3-is-released/?fbclid=IwAR3Fvp5o46N0OFfJGlLp9kInWfk9h-VPITwM-By-01zbJlfmyjOSFK3YRDA&quot;&gt;changelog&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Support for Psalm is &lt;a href=&quot;https://blog.jetbrains.com/phpstorm/2020/07/phpstan-and-psalm-support-coming-to-phpstorm/&quot;&gt;coming soon&lt;/a&gt; (probably 2020.3).&lt;/li&gt;
+  &lt;li&gt;PHPStorm 2020.2 will introduce many cool stuff including PHP 8 Union Types support. Read more on their &lt;a href=&quot;https://blog.jetbrains.com/phpstorm/2020/07/phpstorm-2020-2-eap-6-union-nbsp-types-are-here/&quot;&gt;blog&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center pb-2&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I only have two elephpants btw, how about you? Share a pic! &lt;a href=&quot;https://t.co/AyIHQcT0K6&quot;&gt;pic.twitter.com/AyIHQcT0K6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brent (@brendt_gd) &lt;a href=&quot;https://twitter.com/brendt_gd/status/1279056896230645773?ref_src=twsrc%5Etfw&quot;&gt;July 3, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;If you want to get one of these cute elephpants which are not for sale yet. The staff of PHPStorm is sending them to the most active EAPers! So make sure you try the latest builds and give feedback and you might win one!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I’m really excited to hear what you think about the newsletter. Make sure you drop me a line on &lt;a href=&quot;https://twitter.com/NikolayTsanov&quot;&gt;Twitter&lt;/a&gt;! I really appreciate spreading the word about this and I’m welcoming all suggestions!&lt;/strong&gt;&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="phpstorm" /><category term="tools" /><category term="php" /><summary type="html">This is an archive of the first email from the series - “PhpStorm, But Better!”. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!</summary></entry><entry><title type="html">The Importance of the Meta Theme Color</title><link href="https://ntsanov.com/blog/the-importance-of-the-meta-theme-color" rel="alternate" type="text/html" title="The Importance of the Meta Theme Color" /><published>2020-05-19T00:00:00+03:00</published><updated>2020-05-19T00:00:00+03:00</updated><id>https://ntsanov.com/blog/the-importance-of-the-meta-theme-color</id><content type="html" xml:base="https://ntsanov.com/blog/the-importance-of-the-meta-theme-color">&lt;p&gt;You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*Rt7lUs235zuIFyj9V4nJcA.jpeg&quot; alt=&quot;Medium’s website with a nice contrast between the menu bar and the page&quot; /&gt;&lt;em&gt;Medium’s website with a nice contrast between the menu bar and the page&lt;/em&gt;&lt;/p&gt;
 
@@ -17,7 +126,7 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This one line can go a long way in helping your clients notice you and your website. It simply looks more professional and you appear to have spent more time on your design. Support for this feature has been introduced in version 39 of Chrome for Android on Lollipop.&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="html" /><category term="UX" /><category term="web development" /><summary type="html">You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.</summary></entry><entry><title type="html">Integrate Google Tag Manager with an existing cookie consent form</title><link href="https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form" rel="alternate" type="text/html" title="Integrate Google Tag Manager with an existing cookie consent form" /><published>2020-05-05T00:00:00+03:00</published><updated>2020-05-05T00:00:00+03:00</updated><id>https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form</id><content type="html" xml:base="https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form">&lt;p&gt;Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.&lt;/p&gt;
+&lt;p&gt;This one line can go a long way in helping your clients notice you and your website. It simply looks more professional and you appear to have spent more time on your design. Support for this feature has been introduced in version 39 of Chrome for Android on Lollipop.&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="html" /><category term="ux" /><category term="css" /><summary type="html">You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.</summary></entry><entry><title type="html">Integrate Google Tag Manager with an existing cookie consent form</title><link href="https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form" rel="alternate" type="text/html" title="Integrate Google Tag Manager with an existing cookie consent form" /><published>2020-05-05T00:00:00+03:00</published><updated>2020-05-05T00:00:00+03:00</updated><id>https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form</id><content type="html" xml:base="https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form">&lt;p&gt;Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg&quot; alt=&quot;Photo by Luke Chesser - Google Analytics&quot; /&gt;&lt;em&gt;Photo by &lt;a href=&quot;https://unsplash.com/@lukechesser?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Luke Chesser&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -103,4 +212,4 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Thank you for reading this article! Hope you found it interesting and helpful. You can find me on Twitter (@&lt;a href=&quot;https://twitter.com/NikolayTsanov&quot;&gt;NikolayTsanov&lt;/a&gt;).&lt;/strong&gt;&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="php" /><category term="sass" /><category term="bootstrap" /><category term="jquery" /><category term="html" /><category term="vuejs" /><category term="pusher" /><category term="stripe" /><summary type="html">Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;Thank you for reading this article! Hope you found it interesting and helpful. You can find me on Twitter (@&lt;a href=&quot;https://twitter.com/NikolayTsanov&quot;&gt;NikolayTsanov&lt;/a&gt;).&lt;/strong&gt;&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="seo" /><category term="googletagmanager" /><category term="googleanalytics" /><category term="js" /><summary type="html">Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.</summary></entry></feed>
