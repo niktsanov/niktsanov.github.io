@@ -38,9 +38,9 @@ The easiest way to import the colour scheme is by opening your preferences dialo
 ![](/assets/images/posts/phpstorm-but-better-making-it-look-pretty/2.png)
 
 If you prefer to do all of this manually, download the **.icls** files from the repository and place them inside your PhpStorm preferences directory. The location depends on the OS and the version of PhpStorm. You can check more on their website. For version 2020.1 and above (I assume you are on the latest one), you can do this (where `<product>` is PhpStorm):
-- Windows: **%APPDATA%\JetBrainslt;product><version>**
-- macOS: **~/Library/Application Support/JetBrains/<product><version>**
-- Linux: **~/.config/JetBrains/<product><version>**
+- Windows: `%APPDATA%\JetBrains\<product><version>`
+- macOS: `~/Library/Application Support/JetBrains/<product><version>`
+- Linux: `~/.config/JetBrains/<product><version>`
 
 Inside the directory, you'll need to place your **.icls** files in the **/colors** folder (if you don't have it, just create it).
 
@@ -120,3 +120,5 @@ Now, we are pretty much done with our layout. We've organized the panels, we've 
 **If you want to contribute to the newsletter, don't hesitate to contact me either on [Twitter](https://twitter.com/NikolayTsanov) or via email!**
 
 **Next time, we'll explore plugins for PhpStorm that will make a huge difference in your daily workflow and more!**
+
+[Getting Rid Of The Distractions](/blog/phpstorm-but-better-getting-rid-of-the-distractions){: .previous-from-series-button}

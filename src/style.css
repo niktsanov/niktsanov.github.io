@@ -78,8 +78,16 @@
 }
 
 .highlighter-rouge {
-    @apply px-6 py-4 mb-8 text-base rounded-lg shadow-sm overflow-scroll relative;
+    @apply text-base rounded-lg shadow-sm overflow-scroll relative;
     background-color: #f0f0f0;
+}
+
+code.highlighter-rouge {
+    @apply px-3 py-1;
+}
+
+div.highlighter-rouge {
+    @apply px-6 py-4 mb-8;
 }
 
 .highlight, code {
@@ -115,6 +123,12 @@ code::after {
     .highlighter-rouge {
         @apply text-lg;
     }
+}
+
+.previous-from-series-button:before {
+   font-family: "Font Awesome 5 Free";
+   content: '\f060';
+   @apply pr-4 inline-block align-middle font-black;
 }
 
 .highlight .hll { background-color: #ffffcc }
