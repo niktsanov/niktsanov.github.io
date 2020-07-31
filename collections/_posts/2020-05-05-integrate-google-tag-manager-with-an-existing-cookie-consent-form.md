@@ -7,17 +7,17 @@ categories: [SEO]
 
 Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.
 
-![Photo by Luke Chesser - Google Analytics](https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg)*Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/analytics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+{% include image.html url="https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg" description="Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/analytics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" %}
 
 ## Getting started with Google Tag Manager and Google Analytics
 
 Firstly, we need to set up Google Tag Manager into our existing project and import Google Analytics. Bear in mind, it is really important to remove any previous code related to tracking before adding GTM (I will talk about this later). We will start by adding a new account to Google Tag Manager. For account name, you can choose the name of your project, the name of the company you are working for or anything else you like. Make sure to keep it consistent, soon you might end up with a dozen of projects!
 
-![Setup account’s information](https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png)*Setup account’s information*
+{% include image.html url="https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png" description="Setup account’s information" %}
 
 The account will be the main holder for the containers. A container is simply a bundle of scripts that will execute following some criteria. An example of having multiple containers for one account is if you want to split the various scripts that will run on the main domain and the subdomain. Therefore, you will setup a container for example.com and staging.example.com . We will also pick Web as a targeted platform. Everything here can be changed later on!
 
-![Setup a container for the current account](https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png)*Setup a container for the current account*
+{% include image.html url="https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png" description="Setup a container for the current account" %}
 
 After you are done setting up everything, you will be prompted with code snippets that you can directly import into your project.
 
