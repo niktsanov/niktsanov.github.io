@@ -152,17 +152,29 @@
       <article class="post-content">
         <p>Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg" alt="Photo by Luke Chesser - Google Analytics" /><em>Photo by <a href="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Luke Chesser</a> on <a href="https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+<figure>
+    <img src="https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg" alt="Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)" />
+    <figcaption><p>Photo by <a href="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Luke Chesser</a> on <a href="https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</figcaption>
+</figure>
 
 <h2 id="getting-started-with-google-tag-manager-and-google-analytics">Getting started with Google Tag Manager and Google Analytics</h2>
 
 <p>Firstly, we need to set up Google Tag Manager into our existing project and import Google Analytics. Bear in mind, it is really important to remove any previous code related to tracking before adding GTM (I will talk about this later). We will start by adding a new account to Google Tag Manager. For account name, you can choose the name of your project, the name of the company you are working for or anything else you like. Make sure to keep it consistent, soon you might end up with a dozen of projects!</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png" alt="Setup account’s information" /><em>Setup account’s information</em></p>
+<figure>
+    <img src="https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png" alt="Setup account’s information" />
+    <figcaption><p>Setup account’s information</p>
+</figcaption>
+</figure>
 
 <p>The account will be the main holder for the containers. A container is simply a bundle of scripts that will execute following some criteria. An example of having multiple containers for one account is if you want to split the various scripts that will run on the main domain and the subdomain. Therefore, you will setup a container for example.com and staging.example.com . We will also pick Web as a targeted platform. Everything here can be changed later on!</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png" alt="Setup a container for the current account" /><em>Setup a container for the current account</em></p>
+<figure>
+    <img src="https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png" alt="Setup a container for the current account" />
+    <figcaption><p>Setup a container for the current account</p>
+</figcaption>
+</figure>
 
 <p>After you are done setting up everything, you will be prompted with code snippets that you can directly import into your project.</p>
 

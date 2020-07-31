@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="en-US" style="font-size: 16px;">
+
+<head>
+  <script src="https://config.metomic.io/config.js?id=prj:5bbdee0c-6eca-49de-b165-c7aba251f882" crossorigin
+    charset="utf-8"></script>
+  <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    
+      PhpStorm, But Better! #2 - Making It Look Pretty - Nikolay Tsanov
+    
+  </title>
+  <link rel="stylesheet" href="https://use.typekit.net/tzd5hjy.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=0.2">
+  <meta itemprop="description" name="description"
+    content="A full-stack web developer with experience in Laravel and solid background in frontend development." />
+  <meta name="author" content="Nikolay Tsanov">
+
+  
+  <meta name="keywords" content="phpstorm, tools, php">
+  
+
+  <meta name="theme-color" content="#23283a">
+  <link type="application/atom+xml" rel="alternate" href="https://ntsanov.com/feed.xml" title="Nikolay Tsanov - Full-Stack Web Developer" />
+
+  <link rel="icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVJ7VRJ');
+</script>
+<!-- End Google Tag Manager -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Nikolay Tsanov",
+      "url": "http://ntsanov.com/",
+      "image": "https://ntsanov.com/assets/images/me-300x300.jpg",
+      "sameAs": [
+        "https://twitter.com/NikolayTsanov",
+        "https://www.linkedin.com/in/ntsanov/",
+        "https://github.com/niktsanov"
+      ],
+      "description": "A full-stack web developer with experience in Laravel and solid background in frontend development.",
+      "jobTitle": "Full-Stack Web Developer"
+    }
+    </script>
+</head>
+
+<body class="flex flex-col min-h-screen antialiased">
+
+<header class="bg-blue-900 bg-no-repeat bg-right w-full z-20">
+    <div class="max-w-6xl mx-auto p-4 lg:py-8 text-lg">
+        <div class="">
+            <div class="flex flew-wrap justify-between md:content-center items-center">
+                <a href="/" class="inline-block uppercase text-white font-semibold tracking-wide">
+                    Tsanov <span class="text-red-500">.</span>
+                </a>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = true"
+                        class="block md:hidden outline-none active:outline-none focus:outline-none text-white js-menu-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0 0 24 24" style=" fill:currentColor;">
+                            <path
+                                d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <div :class="{'expanded' : open === true}"
+                        class="nav-target js-nav-target md:block fixed md:relative top-0 left-0 bg-blue-900 md:bg-transparent h-full md:h-auto w-full md:w-auto p-4 md:p-0">
+                        <div class="text-right">
+                            <button @click="open = false"
+                                class="js-nav-quit inline-block md:hidden outline-none active:outline-none focus:outline-none">
+                                <svg width="28" height="28" viewBox="0 0 24 24" version="1.1"
+                                    class="fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                    xmlns:serif="http://www.serif.com/">
+                                    <g>
+                                        <path d="M2.808,19.778l1.414,1.414l16.97,-16.97l-1.414,-1.414l-16.97,16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                        <path d="M4.222,2.808l-1.414,1.414l16.97,16.97l1.414,-1.414l-16.97,-16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                    </g>
+                                </svg> </button>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row text-lg md:text-base">
+                            <a href="/"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Home
+                            </a>
+                            <a href="/blog"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Blog
+                            </a>
+                            <a href="/projects"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Projects
+                            </a>
+                            <a href="/about"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                About
+                            </a>
+                            <a href="/contact"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-8 md:py-16 text-white text-3xl md:text-5xl">
+            <div class="font-display font-extrabold inline-block align-middle">
+                <h1>
+                    PhpStorm, But Better! #2 - Making It Look Pretty
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+  <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
+
+    <div class="max-w-3xl mx-auto">
+      <div class="block pt-2 text-sm md:text-base text-gray-600 mb-5">
+        
+          
+              <a class="font-semibold text-red-500" href="/category/phpstorm-but-better">PhpStorm, But Better</a>
+              
+          
+          <span class="px-1"> / </span>
+        
+        
+        <time>July 30, 2020</time>
+      </div>
+
+      <article class="post-content">
+        <p>This is an archive of the second email from the series - <a href="http://phpstormbutbetter.com/">“PhpStorm, But Better!”</a>. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!</p>
+
+<p>Today, we’ll explore one of the most interesting topics for me - <strong>making the IDE look good</strong>. As I mentioned in the last email, having a good theme and font is essential. You’ll be staring many hours at that exact screen, so you need to take your time and make it look appealing. However, it’s not only for you to look fancy in front of colleagues, but you also need a theme that will suit your environment and a font that is easy to read. For example, if you are in a bright environment, you need a light theme that will help you relax your eyes. If you are working late and it’s dark, you might prefer a dark theme. When switching from dark to light, or the other way around, it takes some getting used to, however, always consider it as a fresh start which might even motivate you to write more code!</p>
+
+<p><strong>Note: This is a controversial topic, all of the information given here is just suggestions that you might or might not follow. Everything is up to you!</strong></p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="topic-i---aestetics">Topic I - Aestetics</h3>
+<ul>
+  <li><del>Removing the Panels and Floating Tools</del></li>
+  <li><del>Moving The Sidebar (Projects Explorer)</del></li>
+  <li>Picking Up A Theme</li>
+  <li>Picking Up Font</li>
+  <li>Better Icons</li>
+</ul>
+
+<h2 id="picking-up-a-theme">Picking Up A Theme</h2>
+<p>We’ll start with deciding on a theme. I’ll first give you few suggestions for a light theme and the reasons behind using one. Then, the same procedure for a dark theme. Lastly, I’ll finish off with a suggestion for a theme that is in between dark and light.</p>
+
+<h3 id="light-theme">Light Theme</h3>
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/0.jpg" alt="" /></p>
+
+<p>Now, leaving jokes aside, there are many benefits for using a light theme and there are some misunderstandings about it. You can check Brent Roose’s video on this topic. He explains the difference between contrast and brightness, colours, visual patterns and much more. I’ll summerise some of the information related to the themes.</p>
+
+<p>Many people prefer dark themes invoking the reason that light themes hurt their eyes. However, this is simply not true. Brightness is what hurts your eyes, not the contrast of the theme. Many studies have shown that having dark text on a light background is much easier to read than having the opposite (especially for prolonged periods).</p>
+
+<p>Introducing to you, <a href="https://github.com/brendt/phpstorm-photon-theme">Photon</a> colour scheme for PhpStorm by none other than Brent himself. It is a high contrast scheme based on the colour palette of Firefox’s dev tools.</p>
+
+<figure>
+    <img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/1.png" alt="Photon" />
+    <figcaption><p>Photon</p>
+</figcaption>
+</figure>
+
+<p>The easiest way to import the colour scheme is by opening your preferences dialog (<strong>macOS: PhpStorm &gt; Preferences…</strong> or <strong>Windows, Linux: File &gt; Settings</strong>), then <strong>Editor &gt; Color Scheme &gt; Import Scheme…</strong>.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/2.png" alt="" /></p>
+
+<p>If you prefer to do all of this manually, download the <strong>.icls</strong> files from the repository and place them inside your PhpStorm preferences directory. The location depends on the OS and the version of PhpStorm. You can check more on their website. For version 2020.1 and above (I assume you are on the latest one), you can do this (where <code class="highlighter-rouge">&lt;product&gt;</code> is PhpStorm):</p>
+<ul>
+  <li>Windows: <code class="highlighter-rouge">%APPDATA%\JetBrains\&lt;product&gt;&lt;version&gt;</code></li>
+  <li>macOS: <code class="highlighter-rouge">~/Library/Application Support/JetBrains/&lt;product&gt;&lt;version&gt;</code></li>
+  <li>Linux: <code class="highlighter-rouge">~/.config/JetBrains/&lt;product&gt;&lt;version&gt;</code></li>
+</ul>
+
+<p>Inside the directory, you’ll need to place your <strong>.icls</strong> files in the <strong>/colors</strong> folder (if you don’t have it, just create it).</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/3.png" alt="" /></p>
+
+<p>Then, restart PhpStorm, open your preferences dialog (<strong>macOS: PhpStorm &gt; Preferences…</strong> or <strong>Windows, Linux: File &gt; Settings</strong>), from there <strong>Editor &gt; Color Scheme and select the Photon - Light scheme</strong>.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/4.png" alt="" /></p>
+
+<p>If you are switching from a dark scheme to a light one, or the other way around, PhpStorm will ask whether you want the theme to also be changed.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/5.png" alt="" /></p>
+
+<p>Now, there is a difference between a scheme and a theme in PhpStorm. This is intuitive, however, I’ll still mention it. The scheme is considered to be the syntax highlighting, while the theme is simply the colour of the dialogs, panels etc. So it goes without saying, having them match is better looking than having a huge contrast, though, you are free to experiment!</p>
+
+<p>If you are not a fan of the colours of the previous colour scheme, you can check <a href="https://github.com/brendt/phpstorm-light-lite-theme">Light Lite</a>. I often find myself switching between those two. Light Lite is again made by Brent and it’s based on the colours of Google’s logo. You might have seen it already on some of <a href="https://twitter.com/freekmurze">Freek</a>’s streams or his feed when posting a screenshot of a snippet.</p>
+
+<figure>
+    <img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/6.png" alt="Light Lite" />
+    <figcaption><p>Light Lite</p>
+</figcaption>
+</figure>
+
+<h3 id="dark-theme">Dark Theme</h3>
+<p>If you are still not convinced about trying a light theme, I got you! I do use dark themes as well, especially when I’m working late on a dim light. I find it easier to write code on a dark background when it’s dark around me (personal preference). I won’t be talking too much about the popular <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">Material Theme UI</a> that probably you’ve seen more than once. If you want to find more on how to set it up, I advise you to check Christoph’s <a href="https://www.youtube.com/watch?v=3SUtEnMj1ws">video</a> on it. My go-to dark theme, at the moment of writing, is <a href="https://plugins.jetbrains.com/plugin/12275-dracula-theme">Dracula</a> + Material Theme UI.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/7.png" alt="" /></p>
+
+<p>Just download the plugin and restart PhpStorm. After the restart, the plugin will be enabled, then you can do the trick I’ve shown you last time - <strong>Navigate &gt; Search Everywhere &gt; type “dracula”</strong> and toggle it.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/8.png" alt="" /></p>
+
+<h3 id="something-in-between-kinda">Something In Between (Kinda)</h3>
+
+<figure>
+    <img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/9.png" alt="Material Solarized Light" />
+    <figcaption><p>Material Solarized Light</p>
+</figcaption>
+</figure>
+
+<p>If you don’t want a dark theme, but you also find the light themes a bit too light, then this material theme + solarized light colour scheme is just for you.</p>
+
+<p>If you followed the steps from above and you already have the Material Theme UI enabled, then you are pretty much set. Just search for <strong>“solarized light”</strong> in the <strong>“Search everywhere…“</strong> dialog and toggle it.</p>
+
+<h2 id="picking-up-font">Picking Up Font</h2>
+<p>Picking up font is the second most important thing after getting a nice theme on. I’ll stick to the free fonts since not everyone is willing to pay for a premium and I’m one of those people - I easily get bored with fonts, and I tend to switch them from time to time. Paying any amount of money for a font that I might change in a month is not ideal.</p>
+
+<p>Now, with the pricing out of the way, <strong>legibility</strong> is the most important thing! There was a trend recently where using a font with italic styling was the mainstream, and yes, while it looks nice, there is a reason why monospace fonts are better for programmers. The programmer needs to easily distinguish each letter - one extra symbol can break everything. You’ll probably know the fonts that I’ll mention, but that goes without saying that they are top in this niche.</p>
+
+<ul>
+  <li>​<a href="https://github.com/tonsky/FiraCode">Fira Code (Retina)</a> - Yes, you’ve probably seen it countless times and you might be even bored from it, however, this front stands out for its premium look which you get for free! Just head to the <a href="https://github.com/tonsky/FiraCode">repository</a> and try it out!</li>
+</ul>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/10.png" alt="" /></p>
+
+<ul>
+  <li>​<a href="https://www.jetbrains.com/lp/mono/">Jetbrains Mono</a> - This font is my second top pick. It’s clean, it stands out and it is a really good alternative to Fira Code.</li>
+</ul>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/11.png" alt="" /></p>
+
+<p>As you can see, the difference is almost unnoticeable, but trust me you’ll see it! To set up the font, go to the <strong>PhpStorm’s preferences &gt; Editor &gt; Font</strong>. I like having enough space between the lines, so I always go for something higher such as 2.0. On my screen, 14px font size looks perfect, so I’m keeping it like that. You can play around and see what suits you the best!</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/12.png" alt="" /></p>
+
+<p>Some people love font ligatures, some don’t. That’s up to you again! You can enable them with selecting the “Enable font ligatures” checkbox. You’ll get these nice-looking symbols for !=, ==, === etc. Setting up a fallback font is also a good practice, however, if you are using Fira Code, pretty much everything is supported.</p>
+
+<h2 id="better-icons">Better Icons</h2>
+<p>We’ll need to show some love to the sidebar. Even if you are not using it that much, you’ll still have to toggle it at one point. The default icons are a bit too bland for my taste.</p>
+
+<figure>
+    <img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/13.png" alt="Sidebar Before 'Better Icons'" />
+    <figcaption><p>Sidebar Before ‘Better Icons’</p>
+</figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/14.png" alt="Sidebar After 'Better Icons'" />
+    <figcaption><p>Sidebar After ‘Better Icons’</p>
+</figcaption>
+</figure>
+
+<p>To achieve this, head to the plugins’ marketplace and get the <a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons</a>. Install it (just like you did with the Material UI plugin), enable it, and everything will be set for you out of the box.</p>
+
+<p>Now, we are pretty much done with our layout. We’ve organized the panels, we’ve picked up a theme and font, and we also have nice looking icons! However, as mentioned by <a href="https://twitter.com/iksaku2">Jorge González</a> on Twitter, after reorganizing the various aspects of the layout (especially placing the sidebar on the right), we need to store it as default, otherwise, when creating a new project your panels might look out of place. To do that, simply select <strong>Window &gt; Store Current Layout as Default</strong> or <strong>Navigate &gt; Search Everywhere &gt; type “store current layout as default”</strong>.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/15.png" alt="" /></p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-making-it-look-pretty/16.png" alt="" /></p>
+
+<h2 id="news">News</h2>
+<ul>
+  <li>PhpStorm 2020.2 has been released! Check out more on their <a href="https://www.jetbrains.com/phpstorm/whatsnew/">website</a>.</li>
+  <li><a href="https://alexvanderbist.com/">Alex Vanderbist</a> added a nice live template for quickly writing PHP arrow functions. Check out the gist he posted (we’ll be exploring live templates later in the series).</li>
+</ul>
+
+<p><strong>Thank you once more for the great feedback!</strong></p>
+
+<p><strong>If you want to contribute to the newsletter, don’t hesitate to contact me either on <a href="https://twitter.com/NikolayTsanov">Twitter</a> or via email!</strong></p>
+
+<p><strong>Next time, we’ll explore plugins for PhpStorm that will make a huge difference in your daily workflow and more!</strong></p>
+
+<p><a href="/blog/phpstorm-but-better-getting-rid-of-the-distractions" class="previous-from-series-button">Getting Rid Of The Distractions</a></p>
+
+  
+        
+        <div class="text-gray-600">
+          <span class="mr-2">Tags:</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">phpstorm</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">tools</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">php</span>
+          
+        </div>
+        
+  
+        <div class="w-full bg-gray-100 shadow-md rounded p-8 sm:p-10 mt-12 mb-8 border-b-4 border-blue-900">
+    <div class="flex items-center flex-col sm:flex-row mb-4">
+        <div class="w-full sm:w-1/2">
+            <h2 class="mt-0">Let's stay in touch</h2>
+            <p class="text-lg">Sign up for my newsletter and I will let you know about more content and new projects.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 ">
+            <form
+                action="https://ntsanov.us18.list-manage.com/subscribe/post?u=0c6d3e346535dc283d2898df4&amp;id=2f29fa6aed"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div class="mb-4">
+                    <label for="mce-EMAIL" class="block text-grey-darkest text-sm font-extrabold mb-2" for="email">
+                        E-Mail <span class="text-red-600">*</span>
+                    </label>
+                    <input name="EMAIL" id="mce-EMAIL"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark" type="email"
+                        placeholder="Your E-Mail" required="required">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-grey-darkest text-sm font-extrabold mb-2" for="mce-FNAME">
+                        First name
+                    </label>
+                    <input name="FNAME" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark"
+                        id="mce-FNAME" type="text" placeholder="Your first name">
+                </div>
+                <div class="flex items-center justify-between">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_0c6d3e346535dc283d2898df4_2f29fa6aed" tabindex="-1" value=""></div>
+                    <button class="bg-blue-900 text-white font-extrabold py-2 px-4 rounded" type="submit">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+      </article>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-blue-900 p-6">
+    <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
+        <p x-data="{currentYear: null}" x-init="currentYear = new Date().getFullYear()">
+            © <span x-html="currentYear"></span> Nikolay Tsanov &nbsp;•&nbsp;
+            <a target="_blank" href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a target="_blank" href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+            <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/6f1d483764.js" crossorigin="anonymous" async defer></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" async defer></script>
+</body>
+
+</html>

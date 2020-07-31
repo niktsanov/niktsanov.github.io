@@ -1,4 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://ntsanov.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ntsanov.com/" rel="alternate" type="text/html" /><updated>2020-07-13T15:37:03+03:00</updated><id>https://ntsanov.com/feed.xml</id><title type="html">Nikolay Tsanov - Full-Stack Web Developer</title><subtitle>A full-stack web developer with experience in Laravel and solid background in frontend development.</subtitle><author><name>Nikolay Tsanov</name></author><entry><title type="html">PhpStorm, But Better! #1 - Getting Rid Of The Distractions</title><link href="https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions" rel="alternate" type="text/html" title="PhpStorm, But Better! #1 - Getting Rid Of The Distractions" /><published>2020-07-10T00:00:00+03:00</published><updated>2020-07-10T00:00:00+03:00</updated><id>https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions</id><content type="html" xml:base="https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions">&lt;p&gt;This is an archive of the first email from the series - &lt;a href=&quot;http://phpstormbutbetter.com/&quot;&gt;“PhpStorm, But Better!”&lt;/a&gt;. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://ntsanov.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ntsanov.com/" rel="alternate" type="text/html" /><updated>2020-07-31T13:16:18+03:00</updated><id>https://ntsanov.com/feed.xml</id><title type="html">Nikolay Tsanov - Full-Stack Web Developer</title><subtitle>A full-stack web developer with experience in Laravel and solid background in frontend development.</subtitle><author><name>Nikolay Tsanov</name></author><entry><title type="html">PhpStorm, But Better! #2 - Making It Look Pretty</title><link href="https://ntsanov.com/blog/phpstorm-but-better-making-it-look-pretty" rel="alternate" type="text/html" title="PhpStorm, But Better! #2 - Making It Look Pretty" /><published>2020-07-30T00:00:00+03:00</published><updated>2020-07-30T00:00:00+03:00</updated><id>https://ntsanov.com/blog/phpstorm-but-better-making-it-look-pretty</id><content type="html" xml:base="https://ntsanov.com/blog/phpstorm-but-better-making-it-look-pretty">&lt;p&gt;This is an archive of the second email from the series - &lt;a href=&quot;http://phpstormbutbetter.com/&quot;&gt;“PhpStorm, But Better!”&lt;/a&gt;. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!&lt;/p&gt;
+
+&lt;p&gt;Today, we’ll explore one of the most interesting topics for me - &lt;strong&gt;making the IDE look good&lt;/strong&gt;. As I mentioned in the last email, having a good theme and font is essential. You’ll be staring many hours at that exact screen, so you need to take your time and make it look appealing. However, it’s not only for you to look fancy in front of colleagues, but you also need a theme that will suit your environment and a font that is easy to read. For example, if you are in a bright environment, you need a light theme that will help you relax your eyes. If you are working late and it’s dark, you might prefer a dark theme. When switching from dark to light, or the other way around, it takes some getting used to, however, always consider it as a fresh start which might even motivate you to write more code!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: This is a controversial topic, all of the information given here is just suggestions that you might or might not follow. Everything is up to you!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+&lt;h3 id=&quot;topic-i---aestetics&quot;&gt;Topic I - Aestetics&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;del&gt;Removing the Panels and Floating Tools&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;Moving The Sidebar (Projects Explorer)&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;Picking Up A Theme&lt;/li&gt;
+  &lt;li&gt;Picking Up Font&lt;/li&gt;
+  &lt;li&gt;Better Icons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;picking-up-a-theme&quot;&gt;Picking Up A Theme&lt;/h2&gt;
+&lt;p&gt;We’ll start with deciding on a theme. I’ll first give you few suggestions for a light theme and the reasons behind using one. Then, the same procedure for a dark theme. Lastly, I’ll finish off with a suggestion for a theme that is in between dark and light.&lt;/p&gt;
+
+&lt;h3 id=&quot;light-theme&quot;&gt;Light Theme&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, leaving jokes aside, there are many benefits for using a light theme and there are some misunderstandings about it. You can check Brent Roose’s video on this topic. He explains the difference between contrast and brightness, colours, visual patterns and much more. I’ll summerise some of the information related to the themes.&lt;/p&gt;
+
+&lt;p&gt;Many people prefer dark themes invoking the reason that light themes hurt their eyes. However, this is simply not true. Brightness is what hurts your eyes, not the contrast of the theme. Many studies have shown that having dark text on a light background is much easier to read than having the opposite (especially for prolonged periods).&lt;/p&gt;
+
+&lt;p&gt;Introducing to you, &lt;a href=&quot;https://github.com/brendt/phpstorm-photon-theme&quot;&gt;Photon&lt;/a&gt; colour scheme for PhpStorm by none other than Brent himself. It is a high contrast scheme based on the colour palette of Firefox’s dev tools.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/1.png&quot; alt=&quot;Photon&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Photon&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The easiest way to import the colour scheme is by opening your preferences dialog (&lt;strong&gt;macOS: PhpStorm &amp;gt; Preferences…&lt;/strong&gt; or &lt;strong&gt;Windows, Linux: File &amp;gt; Settings&lt;/strong&gt;), then &lt;strong&gt;Editor &amp;gt; Color Scheme &amp;gt; Import Scheme…&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you prefer to do all of this manually, download the &lt;strong&gt;.icls&lt;/strong&gt; files from the repository and place them inside your PhpStorm preferences directory. The location depends on the OS and the version of PhpStorm. You can check more on their website. For version 2020.1 and above (I assume you are on the latest one), you can do this (where &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;product&amp;gt;&lt;/code&gt; is PhpStorm):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Windows: &lt;code class=&quot;highlighter-rouge&quot;&gt;%APPDATA%\JetBrains\&amp;lt;product&amp;gt;&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;macOS: &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/JetBrains/&amp;lt;product&amp;gt;&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Linux: &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.config/JetBrains/&amp;lt;product&amp;gt;&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Inside the directory, you’ll need to place your &lt;strong&gt;.icls&lt;/strong&gt; files in the &lt;strong&gt;/colors&lt;/strong&gt; folder (if you don’t have it, just create it).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, restart PhpStorm, open your preferences dialog (&lt;strong&gt;macOS: PhpStorm &amp;gt; Preferences…&lt;/strong&gt; or &lt;strong&gt;Windows, Linux: File &amp;gt; Settings&lt;/strong&gt;), from there &lt;strong&gt;Editor &amp;gt; Color Scheme and select the Photon - Light scheme&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are switching from a dark scheme to a light one, or the other way around, PhpStorm will ask whether you want the theme to also be changed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, there is a difference between a scheme and a theme in PhpStorm. This is intuitive, however, I’ll still mention it. The scheme is considered to be the syntax highlighting, while the theme is simply the colour of the dialogs, panels etc. So it goes without saying, having them match is better looking than having a huge contrast, though, you are free to experiment!&lt;/p&gt;
+
+&lt;p&gt;If you are not a fan of the colours of the previous colour scheme, you can check &lt;a href=&quot;https://github.com/brendt/phpstorm-light-lite-theme&quot;&gt;Light Lite&lt;/a&gt;. I often find myself switching between those two. Light Lite is again made by Brent and it’s based on the colours of Google’s logo. You might have seen it already on some of &lt;a href=&quot;https://twitter.com/freekmurze&quot;&gt;Freek&lt;/a&gt;’s streams or his feed when posting a screenshot of a snippet.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/6.png&quot; alt=&quot;Light Lite&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Light Lite&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;dark-theme&quot;&gt;Dark Theme&lt;/h3&gt;
+&lt;p&gt;If you are still not convinced about trying a light theme, I got you! I do use dark themes as well, especially when I’m working late on a dim light. I find it easier to write code on a dark background when it’s dark around me (personal preference). I won’t be talking too much about the popular &lt;a href=&quot;https://plugins.jetbrains.com/plugin/8006-material-theme-ui&quot;&gt;Material Theme UI&lt;/a&gt; that probably you’ve seen more than once. If you want to find more on how to set it up, I advise you to check Christoph’s &lt;a href=&quot;https://www.youtube.com/watch?v=3SUtEnMj1ws&quot;&gt;video&lt;/a&gt; on it. My go-to dark theme, at the moment of writing, is &lt;a href=&quot;https://plugins.jetbrains.com/plugin/12275-dracula-theme&quot;&gt;Dracula&lt;/a&gt; + Material Theme UI.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just download the plugin and restart PhpStorm. After the restart, the plugin will be enabled, then you can do the trick I’ve shown you last time - &lt;strong&gt;Navigate &amp;gt; Search Everywhere &amp;gt; type “dracula”&lt;/strong&gt; and toggle it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;something-in-between-kinda&quot;&gt;Something In Between (Kinda)&lt;/h3&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/9.png&quot; alt=&quot;Material Solarized Light&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Material Solarized Light&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;If you don’t want a dark theme, but you also find the light themes a bit too light, then this material theme + solarized light colour scheme is just for you.&lt;/p&gt;
+
+&lt;p&gt;If you followed the steps from above and you already have the Material Theme UI enabled, then you are pretty much set. Just search for &lt;strong&gt;“solarized light”&lt;/strong&gt; in the &lt;strong&gt;“Search everywhere…“&lt;/strong&gt; dialog and toggle it.&lt;/p&gt;
+
+&lt;h2 id=&quot;picking-up-font&quot;&gt;Picking Up Font&lt;/h2&gt;
+&lt;p&gt;Picking up font is the second most important thing after getting a nice theme on. I’ll stick to the free fonts since not everyone is willing to pay for a premium and I’m one of those people - I easily get bored with fonts, and I tend to switch them from time to time. Paying any amount of money for a font that I might change in a month is not ideal.&lt;/p&gt;
+
+&lt;p&gt;Now, with the pricing out of the way, &lt;strong&gt;legibility&lt;/strong&gt; is the most important thing! There was a trend recently where using a font with italic styling was the mainstream, and yes, while it looks nice, there is a reason why monospace fonts are better for programmers. The programmer needs to easily distinguish each letter - one extra symbol can break everything. You’ll probably know the fonts that I’ll mention, but that goes without saying that they are top in this niche.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;​&lt;a href=&quot;https://github.com/tonsky/FiraCode&quot;&gt;Fira Code (Retina)&lt;/a&gt; - Yes, you’ve probably seen it countless times and you might be even bored from it, however, this front stands out for its premium look which you get for free! Just head to the &lt;a href=&quot;https://github.com/tonsky/FiraCode&quot;&gt;repository&lt;/a&gt; and try it out!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;​&lt;a href=&quot;https://www.jetbrains.com/lp/mono/&quot;&gt;Jetbrains Mono&lt;/a&gt; - This font is my second top pick. It’s clean, it stands out and it is a really good alternative to Fira Code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the difference is almost unnoticeable, but trust me you’ll see it! To set up the font, go to the &lt;strong&gt;PhpStorm’s preferences &amp;gt; Editor &amp;gt; Font&lt;/strong&gt;. I like having enough space between the lines, so I always go for something higher such as 2.0. On my screen, 14px font size looks perfect, so I’m keeping it like that. You can play around and see what suits you the best!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/12.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some people love font ligatures, some don’t. That’s up to you again! You can enable them with selecting the “Enable font ligatures” checkbox. You’ll get these nice-looking symbols for !=, ==, === etc. Setting up a fallback font is also a good practice, however, if you are using Fira Code, pretty much everything is supported.&lt;/p&gt;
+
+&lt;h2 id=&quot;better-icons&quot;&gt;Better Icons&lt;/h2&gt;
+&lt;p&gt;We’ll need to show some love to the sidebar. Even if you are not using it that much, you’ll still have to toggle it at one point. The default icons are a bit too bland for my taste.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/13.png&quot; alt=&quot;Sidebar Before 'Better Icons'&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Sidebar Before ‘Better Icons’&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/14.png&quot; alt=&quot;Sidebar After 'Better Icons'&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Sidebar After ‘Better Icons’&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To achieve this, head to the plugins’ marketplace and get the &lt;a href=&quot;https://plugins.jetbrains.com/plugin/10044-atom-material-icons&quot;&gt;Atom Material Icons&lt;/a&gt;. Install it (just like you did with the Material UI plugin), enable it, and everything will be set for you out of the box.&lt;/p&gt;
+
+&lt;p&gt;Now, we are pretty much done with our layout. We’ve organized the panels, we’ve picked up a theme and font, and we also have nice looking icons! However, as mentioned by &lt;a href=&quot;https://twitter.com/iksaku2&quot;&gt;Jorge González&lt;/a&gt; on Twitter, after reorganizing the various aspects of the layout (especially placing the sidebar on the right), we need to store it as default, otherwise, when creating a new project your panels might look out of place. To do that, simply select &lt;strong&gt;Window &amp;gt; Store Current Layout as Default&lt;/strong&gt; or &lt;strong&gt;Navigate &amp;gt; Search Everywhere &amp;gt; type “store current layout as default”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/15.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/phpstorm-but-better-making-it-look-pretty/16.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;news&quot;&gt;News&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;PhpStorm 2020.2 has been released! Check out more on their &lt;a href=&quot;https://www.jetbrains.com/phpstorm/whatsnew/&quot;&gt;website&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://alexvanderbist.com/&quot;&gt;Alex Vanderbist&lt;/a&gt; added a nice live template for quickly writing PHP arrow functions. Check out the gist he posted (we’ll be exploring live templates later in the series).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Thank you once more for the great feedback!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you want to contribute to the newsletter, don’t hesitate to contact me either on &lt;a href=&quot;https://twitter.com/NikolayTsanov&quot;&gt;Twitter&lt;/a&gt; or via email!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Next time, we’ll explore plugins for PhpStorm that will make a huge difference in your daily workflow and more!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/blog/phpstorm-but-better-getting-rid-of-the-distractions&quot; class=&quot;previous-from-series-button&quot;&gt;Getting Rid Of The Distractions&lt;/a&gt;&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="phpstorm" /><category term="tools" /><category term="php" /><summary type="html">This is an archive of the second email from the series - “PhpStorm, But Better!”. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!</summary></entry><entry><title type="html">PhpStorm, But Better! #1 - Getting Rid Of The Distractions</title><link href="https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions" rel="alternate" type="text/html" title="PhpStorm, But Better! #1 - Getting Rid Of The Distractions" /><published>2020-07-10T00:00:00+03:00</published><updated>2020-07-10T00:00:00+03:00</updated><id>https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions</id><content type="html" xml:base="https://ntsanov.com/blog/phpstorm-but-better-getting-rid-of-the-distractions">&lt;p&gt;This is an archive of the first email from the series - &lt;a href=&quot;http://phpstormbutbetter.com/&quot;&gt;“PhpStorm, But Better!”&lt;/a&gt;. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!&lt;/p&gt;
 
 &lt;p&gt;I plan to help you improve your PhpStorm workflow by synthesizing useful resources, news, plugins and much more. Over time, your use of the IDE will drastically change and your performance will be significantly improved.&lt;/p&gt;
 
@@ -109,9 +255,17 @@ These are the core principles I follow when working with a specific IDE. If you 
 
 &lt;p&gt;&lt;strong&gt;I’m really excited to hear what you think about the newsletter. Make sure you drop me a line on &lt;a href=&quot;https://twitter.com/NikolayTsanov&quot;&gt;Twitter&lt;/a&gt;! I really appreciate spreading the word about this and I’m welcoming all suggestions!&lt;/strong&gt;&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="phpstorm" /><category term="tools" /><category term="php" /><summary type="html">This is an archive of the first email from the series - “PhpStorm, But Better!”. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!</summary></entry><entry><title type="html">The Importance of the Meta Theme Color</title><link href="https://ntsanov.com/blog/the-importance-of-the-meta-theme-color" rel="alternate" type="text/html" title="The Importance of the Meta Theme Color" /><published>2020-05-19T00:00:00+03:00</published><updated>2020-05-19T00:00:00+03:00</updated><id>https://ntsanov.com/blog/the-importance-of-the-meta-theme-color</id><content type="html" xml:base="https://ntsanov.com/blog/the-importance-of-the-meta-theme-color">&lt;p&gt;You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*Rt7lUs235zuIFyj9V4nJcA.jpeg&quot; alt=&quot;Medium’s website with a nice contrast between the menu bar and the page&quot; /&gt;&lt;em&gt;Medium’s website with a nice contrast between the menu bar and the page&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://miro.medium.com/max/1400/1*Rt7lUs235zuIFyj9V4nJcA.jpeg&quot; alt=&quot;Medium’s website with a nice contrast between the menu bar and the page&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Medium’s website with a nice contrast between the menu bar and the page&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*sB6AGTW2FeQhpNewsD3XrA.jpeg&quot; alt=&quot;The Guardian’s Website&quot; /&gt;&lt;em&gt;The Guardian’s Website&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://miro.medium.com/max/1400/1*sB6AGTW2FeQhpNewsD3XrA.jpeg&quot; alt=&quot;The Guardian’s Website&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;The Guardian’s Website&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;There is no magic in that. This can easily be achieved by using only one line of code inserted directly into the &lt;strong&gt;&amp;lt;head&amp;gt;&lt;/strong&gt; tag of your page. This will suggest to the browser to use this colour rather than the default one.&lt;/p&gt;
 
@@ -128,17 +282,29 @@ These are the core principles I follow when working with a specific IDE. If you 
 
 &lt;p&gt;This one line can go a long way in helping your clients notice you and your website. It simply looks more professional and you appear to have spent more time on your design. Support for this feature has been introduced in version 39 of Chrome for Android on Lollipop.&lt;/p&gt;</content><author><name>Nikolay Tsanov</name></author><category term="html" /><category term="ux" /><category term="css" /><summary type="html">You have probably noticed that on some popular website when visited on mobile, the menu bar in Chrome magically changes its colour to match the primary colour of the page.</summary></entry><entry><title type="html">Integrate Google Tag Manager with an existing cookie consent form</title><link href="https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form" rel="alternate" type="text/html" title="Integrate Google Tag Manager with an existing cookie consent form" /><published>2020-05-05T00:00:00+03:00</published><updated>2020-05-05T00:00:00+03:00</updated><id>https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form</id><content type="html" xml:base="https://ntsanov.com/blog/integrate-google-tag-manager-with-an-existing-cookie-consent-form">&lt;p&gt;Sometimes, Google Tag Manager can be overwhelming. I do like it when it works, but it requires a lot of tinkering before getting the wanted results. Before I start, I must say that I am not an expert in any way with Google Tag Manager, the suggested approach below is just an example of how one can go about solving an issue we experienced working on a project that used VueJS to present the user with a cookie consent banner. We had to provide the user with the option to opt-out or opt-in from certain groups. The “statistics” group included Google Analytics. There might be a prettier solution, however, most of the articles out there only cover scenarios where the website already uses a service such as Cookiebot, OneTrust or other alternatives.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg&quot; alt=&quot;Photo by Luke Chesser - Google Analytics&quot; /&gt;&lt;em&gt;Photo by &lt;a href=&quot;https://unsplash.com/@lukechesser?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Luke Chesser&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://cdn-images-1.medium.com/max/9620/1*T-iADds-1lCncd92GIIyhA.jpeg&quot; alt=&quot;Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText)&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@lukechesser?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Luke Chesser&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;getting-started-with-google-tag-manager-and-google-analytics&quot;&gt;Getting started with Google Tag Manager and Google Analytics&lt;/h2&gt;
 
 &lt;p&gt;Firstly, we need to set up Google Tag Manager into our existing project and import Google Analytics. Bear in mind, it is really important to remove any previous code related to tracking before adding GTM (I will talk about this later). We will start by adding a new account to Google Tag Manager. For account name, you can choose the name of your project, the name of the company you are working for or anything else you like. Make sure to keep it consistent, soon you might end up with a dozen of projects!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png&quot; alt=&quot;Setup account’s information&quot; /&gt;&lt;em&gt;Setup account’s information&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://cdn-images-1.medium.com/max/4760/1*FxjEewvDvUfz1VIuToyMmA.png&quot; alt=&quot;Setup account’s information&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Setup account’s information&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;The account will be the main holder for the containers. A container is simply a bundle of scripts that will execute following some criteria. An example of having multiple containers for one account is if you want to split the various scripts that will run on the main domain and the subdomain. Therefore, you will setup a container for example.com and staging.example.com . We will also pick Web as a targeted platform. Everything here can be changed later on!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png&quot; alt=&quot;Setup a container for the current account&quot; /&gt;&lt;em&gt;Setup a container for the current account&lt;/em&gt;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://cdn-images-1.medium.com/max/4628/1*U_8kWJlcdJIrumn57fEoUw.png&quot; alt=&quot;Setup a container for the current account&quot; /&gt;
+    &lt;figcaption&gt;&lt;p&gt;Setup a container for the current account&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;After you are done setting up everything, you will be prompted with code snippets that you can directly import into your project.&lt;/p&gt;
 
