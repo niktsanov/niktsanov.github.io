@@ -13,7 +13,6 @@
         {% if page.categories %}
           {% for category in page.categories %}
               <a class="font-semibold text-red-500" href="/category/{{ category | slugify }}">{{ category }}</a>
-              {{ not loop.last ? "," }}
           {% endfor %}
           <span class="px-1"> / </span>
         {% endif %}
