@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js" lang="en-US" style="font-size: 16px;">
+
+<head>
+  <script src="https://config.metomic.io/config.js?id=prj:5bbdee0c-6eca-49de-b165-c7aba251f882" crossorigin
+    charset="utf-8"></script>
+  <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    
+      PhpStorm, But Better! #3 - 📦 Battle Tested Plugins - Nikolay Tsanov
+    
+  </title>
+  <link rel="stylesheet" href="https://use.typekit.net/tzd5hjy.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=0.2">
+  <meta itemprop="description" name="description"
+    content="A full-stack web developer with experience in Laravel and solid background in frontend development." />
+  <meta name="author" content="Nikolay Tsanov">
+
+  
+  <meta name="keywords" content="phpstorm, tools, php">
+  
+
+  <meta name="theme-color" content="#23283a">
+  <link type="application/atom+xml" rel="alternate" href="https://ntsanov.com/feed.xml" title="Nikolay Tsanov - Full-Stack Web Developer" />
+
+  <link rel="icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico?v=2" type="image/x-icon" />
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVJ7VRJ');
+</script>
+<!-- End Google Tag Manager -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Nikolay Tsanov",
+      "url": "http://ntsanov.com/",
+      "image": "https://ntsanov.com/assets/images/me-300x300.jpg",
+      "sameAs": [
+        "https://twitter.com/NikolayTsanov",
+        "https://www.linkedin.com/in/ntsanov/",
+        "https://github.com/niktsanov"
+      ],
+      "description": "A full-stack web developer with experience in Laravel and solid background in frontend development.",
+      "jobTitle": "Full-Stack Web Developer"
+    }
+    </script>
+</head>
+
+<body class="flex flex-col min-h-screen antialiased">
+
+<header class="bg-blue-900 bg-no-repeat bg-right w-full z-20">
+    <div class="max-w-6xl mx-auto p-4 lg:py-8 text-lg">
+        <div class="">
+            <div class="flex flew-wrap justify-between md:content-center items-center">
+                <a href="/" class="inline-block uppercase text-white font-semibold tracking-wide">
+                    Tsanov <span class="text-red-500">.</span>
+                </a>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = true"
+                        class="block md:hidden outline-none active:outline-none focus:outline-none text-white js-menu-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0 0 24 24" style=" fill:currentColor;">
+                            <path
+                                d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <div :class="{'expanded' : open === true}"
+                        class="nav-target js-nav-target md:block fixed md:relative top-0 left-0 bg-blue-900 md:bg-transparent h-full md:h-auto w-full md:w-auto p-4 md:p-0">
+                        <div class="text-right">
+                            <button @click="open = false"
+                                class="js-nav-quit inline-block md:hidden outline-none active:outline-none focus:outline-none">
+                                <svg width="28" height="28" viewBox="0 0 24 24" version="1.1"
+                                    class="fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                    xmlns:serif="http://www.serif.com/">
+                                    <g>
+                                        <path d="M2.808,19.778l1.414,1.414l16.97,-16.97l-1.414,-1.414l-16.97,16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                        <path d="M4.222,2.808l-1.414,1.414l16.97,16.97l1.414,-1.414l-16.97,-16.97Z"
+                                            style="fill-rule:nonzero;"></path>
+                                    </g>
+                                </svg> </button>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row text-lg md:text-base">
+                            <a href="/"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Home
+                            </a>
+                            <a href="/blog"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Blog
+                            </a>
+                            <a href="/projects"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Projects
+                            </a>
+                            <a href="/about"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                About
+                            </a>
+                            <a href="/contact"
+                                class="align-middle inline-block p-2 md:p-4 font-semibold text-white hover:text-red-500 uppercase tracking-wide">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-8 md:py-16 text-white text-3xl md:text-5xl">
+            <div class="font-display font-extrabold inline-block align-middle">
+                <h1>
+                    PhpStorm, But Better! #3 - 📦 Battle Tested Plugins
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+  <div class="container content h-full max-w-6xl mx-auto mb-auto px-6 py-12">
+
+    <div class="max-w-3xl mx-auto">
+      <div class="block pt-2 text-sm md:text-base text-gray-600 mb-5">
+        
+          
+              <a class="font-semibold text-red-500" href="/category/phpstorm-but-better">PhpStorm, But Better</a>
+          
+          <span class="px-1"> / </span>
+        
+        
+        <time>September 09, 2020</time>
+      </div>
+
+      <article class="post-content">
+        <p>This is an archive of the third email from the series - <a href="http://phpstormbutbetter.com/">“PhpStorm, But Better!”</a>. In the emails, I’m sharing thoughts, news and more about PhpStorm, so make sure you’re not missing anything by signing up for the newsletter!</p>
+
+<p>In this article, I’ll to talk about plugins that I use every day. Small disclaimer, the plugins are rapidly changing and from time to time you’ll find yourself switching from one to another for several reasons - performance, ease of use, etc. On top of that, the PhpStorm’s team are often introducing new updates in which they implement wanted functionality from the community that makes some plugins obsolete.</p>
+
+<p>PhpStorm comes with a ton of functionality out of the box, and as we experienced in a previous email (<a href="/blog/phpstorm-but-better-getting-rid-of-the-distractions">Getting Rid Of The Distractions</a>), it might feel a bit too much. However, this also greatly benefits the developer - you don’t need to find various plugins and manually set them up to get a common functionality.</p>
+
+<p>The list that I’ll present you is nothing out of the ordinary and you’ve probably used some of the plugins already. Even though it is not a long list, it can help you become more productive which is not only good for you but also your clients.</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="topic-i---aestetics">Topic I - Aestetics</h3>
+<ul>
+  <li>Laravel Development</li>
+  <li>Symfony Development</li>
+  <li>Extra Plugins</li>
+  <li>Fun Plugins To Explore</li>
+</ul>
+
+<h2 id="laravel-development">Laravel Development</h2>
+<p>If you are a Laravel developer, you’ve probably already heard of this plugin. It is an absolute must-have! It doesn’t only include autocompletion, but also blade support and easy navigation between files. You can check the whole list of features on the plugin’s <a href="https://plugins.jetbrains.com/plugin/7532-laravel">homepage</a>.</p>
+
+<p>The installation is pretty straightforward, you install the plugin inside PhpStorm (<code class="highlighter-rouge">Preferences/Settings &gt; Plugins</code> and you search for the wanted plugin inside the <strong>Marketplace</strong>’s section) and you activate it per project (<code class="highlighter-rouge">Settings/Preferences &gt; Languages &amp; Frameworks &gt; PHP &gt; Laravel</code>).</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-battle-tested-plugins/0.png" alt="" /></p>
+
+<p>However, to get the full power of it, you need to also install a certain package inside your project. The package is called <a href="https://github.com/barryvdh/laravel-ide-helper">Laravel IDE Helper</a> and it is maintained by <a href="https://twitter.com/barryvdh?lang=en">Barry vd. Heuvel</a> (make sure to follow him, he knows a thing or two about Laravel!). <a href="https://github.com/barryvdh/laravel-ide-helper">Laravel IDE Helper</a>, as the name indicates, generates helper files based on your project for better autocompletion. To install the package, head to your terminal, navigate to your project and use composer to install it. <code class="highlighter-rouge">composer require --dev barryvdh/laravel-ide-helper</code>. Make sure it is only a require-dev dependency, you don’t want this on production. Then, you can simply run <code class="highlighter-rouge">php artisan ide-helper:generate</code> to generate the <strong>_ide_helper.php</strong> file and also add it to <strong>.gitignore</strong> (you don’t want potential conflicts when working with other people on the project). The package is fully customisable, you can check the Github’s <a href="https://github.com/barryvdh/laravel-ide-helper">homepage</a> for all of the configurations. What I tend to do to avoid the tedious task of running the command every time I update the packages’ list is to add it to the <strong>composer.json</strong> file to <a href="https://github.com/barryvdh/laravel-ide-helper#automatic-phpdoc-generation-for-laravel-facades">run every time on update</a>. Add <code class="highlighter-rouge">@php artisan ide-helper:generate</code> inside the post-update-cmd.</p>
+
+<p><img src="/assets/images/posts/phpstorm-but-better-battle-tested-plugins/1.png" alt="" /></p>
+
+<p>There are few other commands you can run, namely the <code class="highlighter-rouge">php artisan ide-helper:meta</code> command that adds support for factory design patterns by generating a <strong>.phpstorm.meta.php</strong> (add it to the <strong>.gitignore</strong> file as well) and the <code class="highlighter-rouge">php artisan ide-helpers:models</code> command that generates PHPDocs for all of your models (be careful with this one, it needs a working database connection in the <strong>.env</strong> file).</p>
+
+<h2 id="symfony-development">Symfony Development</h2>
+<p>Symfony is another great framework for PHP that is well-known. I haven’t done any Symfony projects in a while now, however, I can advise you on installing the <a href="https://plugins.jetbrains.com/plugin/7219-symfony-support/">Symfony Support</a> plugin alongside <a href="https://plugins.jetbrains.com/plugin/7320-php-annotations/">PHP Annotations</a> (required by Symfony Support). These two combined work like a charm. You still need to enable it per project <code class="highlighter-rouge">Settings/Preferences &gt; Languages &amp; Frameworks &gt; PHP &gt; Symfony</code>.</p>
+
+<h2 id="extra-plugins">Extra Plugins</h2>
+<p>The previously mentioned plugins are probably the most important ones you’ll need. However, there are still a few additions you can install that will make your PhpStorm’s setup that more interesting.</p>
+
+<ul>
+  <li>​<a href="https://plugins.jetbrains.com/plugin/7495--ignore">.gitignore</a> - While having this plugin is not that important because editing a .gitignore happens rarely, it still brings value to the table. My favourite feature is the set of templates that you can use when creating a new .gitignore file. All of the templates’ rules are based on <a href="https://github.com/github/gitignore">Github’s template collection</a>. Another cool feature is the syntax highlighting, even though I don’t use it that often.</li>
+  <li>​<a href="https://plugins.jetbrains.com/plugin/9525--env-files-support">.env</a> files support - Environment variables completion and syntax highlighting. Pretty useful in the long run.</li>
+</ul>
+
+<p><strong>We’ll explore more plugins when I talk about Docker/Vagrant integration and Xdebug.</strong></p>
+
+<h2 id="fun-plugins-to-explore">Fun Plugins To Explore</h2>
+<p>In this section, I want to show you a few plugins that are mainly for fun, however, they can be utilised for learning or even saving time in the long run.</p>
+
+<ul>
+  <li><a href="https://plugins.jetbrains.com/plugin/7160-camelcase">​CamelCase</a> - Toggle between different styles - kebab-case, SNAKE_CASE, PascalCase, camelCase, snake_case or space case.
+<img src="/assets/images/posts/phpstorm-but-better-battle-tested-plugins/2.gif" alt="" /></li>
+  <li>​<a href="https://plugins.jetbrains.com/plugin/9792-key-promoter-x">Key Promoter</a> - If you are new to the shortcuts game, make sure you install this! As the name says, it will prompt you with the key combinations for actions that you often do. It helped me find combinations that I didn’t even know exist.</li>
+</ul>
+
+<p>As I mentioned in the beginning, the list is not that big, however, along the way we’ll be exploring various other plugins on top of these.</p>
+
+<h2 id="next-time">Next Time</h2>
+<ul>
+  <li>How to open files/projects directly from the terminal using a neat command (similar to VS Code’s <code class="highlighter-rouge">code</code> command).</li>
+  <li>Understanding the real power of shortcodes.</li>
+  <li>Quick file navigation.</li>
+</ul>
+
+<p><a href="/blog/phpstorm-but-better-making-it-look-pretty" class="previous-from-series-button">Making It Look Pretty</a></p>
+
+  
+        
+        <div class="text-gray-600">
+          <span class="mr-2">Tags:</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">phpstorm</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">tools</span>
+          
+          <span
+            class="inline-block bg-red-200 rounded-full px-3 py-1 text-base font-semibold text-red-700 mr-2 mt-2">php</span>
+          
+        </div>
+        
+  
+        <div class="w-full bg-gray-100 shadow-md rounded p-8 sm:p-10 mt-12 mb-8 border-b-4 border-blue-900">
+    <div class="flex items-center flex-col sm:flex-row mb-4">
+        <div class="w-full sm:w-1/2">
+            <h2 class="mt-0">Let's stay in touch</h2>
+            <p class="text-lg">Sign up for my newsletter and I will let you know about more content and new projects.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 ">
+            <form
+                action="https://ntsanov.us18.list-manage.com/subscribe/post?u=0c6d3e346535dc283d2898df4&amp;id=2f29fa6aed"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div class="mb-4">
+                    <label for="mce-EMAIL" class="block text-grey-darkest text-sm font-extrabold mb-2" for="email">
+                        E-Mail <span class="text-red-600">*</span>
+                    </label>
+                    <input name="EMAIL" id="mce-EMAIL"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark" type="email"
+                        placeholder="Your E-Mail" required="required">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-grey-darkest text-sm font-extrabold mb-2" for="mce-FNAME">
+                        First name
+                    </label>
+                    <input name="FNAME" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark"
+                        id="mce-FNAME" type="text" placeholder="Your first name">
+                </div>
+                <div class="flex items-center justify-between">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_0c6d3e346535dc283d2898df4_2f29fa6aed" tabindex="-1" value=""></div>
+                    <button class="bg-blue-900 text-white font-extrabold py-2 px-4 rounded" type="submit">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+      </article>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-blue-900 p-6">
+    <div class="container leading-p max-w-5xl mx-auto p-6 text-center text-white">
+        <p x-data="{currentYear: null}" x-init="currentYear = new Date().getFullYear()">
+            © <span x-html="currentYear"></span> Nikolay Tsanov &nbsp;•&nbsp;
+            <a target="_blank" href="http://twitter.com/NikolayTsanov" class="font-semibold">Twitter</a> &nbsp;•&nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/ntsanov/" class="font-semibold">Linkedin</a> &nbsp;•&nbsp;
+            <a target="_blank" href="/feed.xml" class="font-semibold">RSS</a> &nbsp;•&nbsp;
+            <a href="javascript:window.Metomic('ConsentManager:show')" class="font-semibold">Manage Cookies</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/6f1d483764.js" crossorigin="anonymous" async defer></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" async defer></script>
+</body>
+
+</html>
