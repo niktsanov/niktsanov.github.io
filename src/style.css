@@ -125,6 +125,17 @@ code::after {
     }
 }
 
+#masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-auto-rows: 20px;
+    grid-gap: 10px;
+}
+
+.masonry__item {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 33%));
+}
+
 .previous-from-series-button:before {
    font-family: "Font Awesome 5 Free";
    content: '\f060';
