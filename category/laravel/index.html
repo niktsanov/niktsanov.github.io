@@ -146,7 +146,7 @@
       
       <time>January 05, 2021</time>
     </div>
-    <div class="pt-4 text-gray-900"><p>Let me set the stage first: You have a globally assigned throttle middleware on a specific route group or maybe even assigned directly inside the RouteServiceProvider on all routes from a specific file. Then, you try to assign (nest) the throttle middleware inside that group onto a specific route expecting that the global throttle values will be overwritten by the nested values just to be surprised that the route gets locked after fewer requests than specified (more specifically, in the case of a single nested throttle middleware - 2 times fewer requests than expected).</p>
+    <div class="pt-4 text-gray-900"><p>Let me set the stage first: You have a globally assigned throttle middleware on a specific route group or maybe even assigned directly inside the <code class="highlighter-rouge">RouteServiceProvider</code> on all routes from a specific file. Then, you try to assign (nest) the throttle middleware inside that group onto a specific route expecting that the global throttle values will be overwritten by the nested values just to be surprised that the route gets locked after fewer requests than specified (more specifically, in the case of a single nested throttle middleware - two times fewer requests than expected).</p>
 </div>
     
       <div class="mt-3 flex flex-wrap">

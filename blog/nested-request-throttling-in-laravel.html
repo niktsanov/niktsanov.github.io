@@ -149,7 +149,7 @@
       </div>
 
       <article class="post-content">
-        <p>Let me set the stage first: You have a globally assigned throttle middleware on a specific route group or maybe even assigned directly inside the RouteServiceProvider on all routes from a specific file. Then, you try to assign (nest) the throttle middleware inside that group onto a specific route expecting that the global throttle values will be overwritten by the nested values just to be surprised that the route gets locked after fewer requests than specified (more specifically, in the case of a single nested throttle middleware - 2 times fewer requests than expected).</p>
+        <p>Let me set the stage first: You have a globally assigned throttle middleware on a specific route group or maybe even assigned directly inside the <code class="highlighter-rouge">RouteServiceProvider</code> on all routes from a specific file. Then, you try to assign (nest) the throttle middleware inside that group onto a specific route expecting that the global throttle values will be overwritten by the nested values just to be surprised that the route gets locked after fewer requests than specified (more specifically, in the case of a single nested throttle middleware - two times fewer requests than expected).</p>
 
 <figure>
     <img src="/assets/images/posts/nested-request-throttling-in-laravel/429-error.png" alt="Response code 429 after exceeding the limit" />
