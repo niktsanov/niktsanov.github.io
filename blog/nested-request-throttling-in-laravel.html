@@ -152,12 +152,12 @@
         <p>Let me set the stage first: You have a globally assigned throttle middleware on a specific route group or maybe even assigned directly inside the RouteServiceProvider on all routes from a specific file. Then, you try to assign (nest) the throttle middleware inside that group onto a specific route expecting that the global throttle values will be overwritten by the nested values just to be surprised that the route gets locked after fewer requests than specified (more specifically, in the case of a single nested throttle middleware - 2 times fewer requests than expected).</p>
 
 <figure>
-    <img src="/assets/images/posts/nested-request-throttling-in-laravel/429-error.png" alt="429 response code after exceeding the requests' limit" />
-    <figcaption><p>429 response code after exceeding the requests’ limit</p>
+    <img src="/assets/images/posts/nested-request-throttling-in-laravel/429-error.png" alt="Response code 429 after exceeding the limit" />
+    <figcaption><p>Response code 429 after exceeding the limit</p>
 </figcaption>
 </figure>
 
-<p>I found myself in this scenario and after giving some thought it does make sense - the middleware is called twice so two hits rather than one. (The <code class="highlighter-rouge">X-RateLimit-Remaining</code> header gets decremented by 2 rather than 1) However, how can we overcome this obstacle?</p>
+<p>I found myself in this scenario and after giving some thought it does make sense - the middleware is called twice so two hits rather than one. (The <code class="highlighter-rouge">X-RateLimit-Remaining</code> header gets decremented by two rather than one) However, how can we overcome this obstacle?</p>
 <ul>
   <li>We can remove the global throttle middleware and just apply it on all routes we need it. (Quite a bit of repeating indeed)</li>
   <li>Perhaps, we can extend the default throttle middleware and implement some kind of an identifier that we’ll use to differentiate the throttles.</li>
@@ -176,7 +176,9 @@
 <span class="p">});</span>
 </code></pre></div></div>
 
-<p>This feature has been introduced in Laravel 6.0. For any previous versions, you need to extend the default throttle and implement your own solution.</p>
+<p>The route group above wraps three routes inside the <code class="highlighter-rouge">auth</code> and <code class="highlighter-rouge">throttle</code> middlewares. These two middlewares can be considered as global to the routes within that group. Depending on the scenario, we might consider applying different throttle values for some of the routes in the group. This is the case with the <code class="highlighter-rouge">/download</code> and <code class="highlighter-rouge">/search</code> routes - we want to have a lower request limit for them (in the current case). We achieve this by passing a third argument to the throttle middleware. This is the prefix value that will be used to differentiate them - <code class="highlighter-rouge">throttle:max_requests,period,prefix</code>.</p>
+
+<p><strong>This feature has been introduced in Laravel 6.0. For any previous versions, you need to extend the default throttle and implement your own solution.</strong></p>
 
   
         
